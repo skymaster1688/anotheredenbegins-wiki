@@ -14,6 +14,28 @@ interface Props {
 
 const { title, description, path = '/' } = Astro.props;
 
+const siteName = 'Another Eden Begins Wiki';
+const defaultDescription =
+  'Another Eden Begins Wiki with guides, characters, story coverage, demo tips, DLC, endings, platforms, and gameplay information for this time-traveling RPG.';
+
+// —— SEO 全站常量 ——
+const siteUrl = 'https://anotheredenbegins.com';
+// canonical：与 sitemap 一致带尾斜杠；首页即根路径
+const canonical = path === '/' ? siteUrl + '/' : siteUrl + path + '/';
+// Title 拼接：已含品牌词则不重复，避免超长
+const pageTitle = title.includes('Another Eden Begins') ? title : title + ' | Another Eden Begins Wiki';
+const metaDescription = description ?? defaultDescription;
+const ogImage = siteUrl + '/assets/hero-keyart.jpg';
+
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: siteName,
+  url: siteUrl + '/',
+  description: defaultDescription,
+  inLanguage: 'en',
+};
+
 const siteConfig = {
   // —— 统计代码（如 Google Analytics 4）—— 粘贴到此处，将注入每个页面的 </head> 前
   analyticsHead: `
@@ -39,10 +61,6 @@ const nav = [
   { href: '/dlc', label: 'DLC' },
   { href: '/#news', label: 'News' },
 ];
-
-const siteName = 'Another Eden Begins Wiki';
-const defaultDescription =
-  'Another Eden Begins Wiki with guides, characters, story coverage, demo tips, DLC, endings, platforms, and gameplay information for this time-traveling RPG.';
 ---
 
 <!doctype html>
@@ -50,8 +68,24 @@ const defaultDescription =
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title}{title === siteName ? '' : ` · ${siteName}`}</title>
-  <meta name="description" content={description ?? defaultDescription}>
+  <title>{pageTitle}</title>
+  <meta name="description" content={metaDescription}>
+  <link rel="canonical" href={canonical}>
+  <!-- Open Graph -->
+  <meta property="og:site_name" content={siteName}>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content={pageTitle}>
+  <meta property="og:description" content={metaDescription}>
+  <meta property="og:url" content={canonical}>
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:image:width" content="480">
+  <meta property="og:image:height" content="384">
+  <meta property="og:locale" content="en_US">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={pageTitle}>
+  <meta name="twitter:description" content={metaDescription}>
+  <meta name="twitter:image" content={ogImage}>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -59,6 +93,7 @@ const defaultDescription =
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#101427">
   <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Cinzel:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+  <script type="application/ld+json" set:html={JSON.stringify(websiteLd)} />
   <Fragment set:html={siteConfig.analyticsHead} />
   <Fragment set:html={siteConfig.adHead} />
 </head>
@@ -94,11 +129,11 @@ const defaultDescription =
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <h4>{siteName}</h4>
+          <h3>{siteName}</h3>
           <p>An independent fan-made guide site for players exploring the time-traveling RPG. It organizes beginner guides, characters, story information, DLC, gameplay systems, and endings in one place.</p>
         </div>
         <div>
-          <h4>Explore</h4>
+          <h3>Explore</h3>
           <ul class="footer-links">
             <li><a href="/guide">Beginner Guide</a></li>
             <li><a href="/characters">Characters</a></li>
@@ -110,7 +145,7 @@ const defaultDescription =
           </ul>
         </div>
         <div>
-          <h4>Community &amp; Official</h4>
+          <h3>Community &amp; Official</h3>
           <ul class="footer-links">
             <li><a href="https://anothereden.games/en/" target="_blank" rel="noopener">Play Another Eden Begins</a></li>
             <li><a href="https://www.youtube.com/@wrightflyerstudios" target="_blank" rel="noopener">Official YouTube</a></li>

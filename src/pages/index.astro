@@ -45,13 +45,62 @@ const faqs = [
     a: 'New Game+ opens up more than 10 different endings, with a new character joining the journey.',
   },
   {
+    q: 'Is there a demo?',
+    a: 'Yes — a free demo covers the opening chapters and your save data carries over to the full game.',
+  },
+  {
+    q: 'Which languages are supported?',
+    a: 'English, Japanese, Korean, Simplified Chinese and Traditional Chinese, in both text and voice.',
+  },
+  {
+    q: 'What does the DLC add?',
+    a: 'Five character packs add 10 more playable characters with their own quests; see the DLC page for the full schedule.',
+  },
+  {
     q: 'Is there an official Discord?',
     a: 'No official Discord has been confirmed. The active community hub is the Reddit community r/AnotherEdenGlobal.',
   },
 ];
+
+const charQuick = [
+  {
+    name: 'Aldo',
+    line: 'The protagonist, wielding a fire sword. His chain skill builds quickly and piles on damage over long fights.',
+    role: 'Damage', element: 'Fire', weapon: 'Sword',
+  },
+  {
+    name: 'Feinne',
+    line: 'Aldo’s sister and the party’s anchor — she heals, clears status ailments and shields allies in tight battles.',
+    role: 'Support', element: 'Light', weapon: 'Staff',
+  },
+  {
+    name: 'Riica',
+    line: 'An android who switches between a battle mode and a support mode, adapting to what the fight needs.',
+    role: 'Flexible', element: 'Neutral', weapon: 'Android',
+  },
+  {
+    name: 'Amy',
+    line: 'A wind-using hunter from the present era who fights with fists and quick multi-hit techniques.',
+    role: 'Damage', element: 'Wind', weapon: 'Fists',
+  },
+  {
+    name: 'Cyrus',
+    line: 'A mysterious frog samurai wielding Enku Jizai sword arts, recruited early in the future era.',
+    role: 'Damage', element: 'Water', weapon: 'Katana',
+  },
+];
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
 ---
 
-<Layout title="Another Eden Begins Wiki — Guides, Characters" path="/">
+<Layout title="Another Eden Begins Wiki — Guides, Characters & DLC" path="/">
   <!-- ===== Hero ===== -->
   <section class="hero" id="top">
     <div class="hero-stars" aria-hidden="true"></div>
@@ -116,6 +165,7 @@ const faqs = [
           <h2>What is Another Eden Begins?</h2>
           <p><b>Another Eden Begins</b> is a single-player time-traveling RPG developed by <b>WRIGHT FLYER STUDIOS</b> and created with scenario writer and director <b>Masato Kato</b>. Players follow <b>Aldo</b> across different eras while trying to save his sister <b>Feinne</b>.</p>
           <p>The game features strategic command battles, chain skills, Another Force, character quests, kinship quests, crafting, and a New Game+ mode with a new character and more than 10 different endings.</p>
+          <p>Behind it is a pedigree JRPG team: scenario director Masato Kato and composer Yasunori Mitsuda return for Begins, and their fingerprints show in the chapter structure, the era-spanning timeline, and the way companion quests unfold. Whether you played the original mobile title or are coming in fresh, this hub collects the essentials — how battles work, who every character is, where the story goes, and what each platform and DLC pack offers.</p>
           <div class="about-facts">
             {aboutStats.map((f) => (
               <div class="fact"><div class="k">{f.label}</div><div class="v">{f.value}</div></div>
@@ -126,6 +176,59 @@ const faqs = [
             <a class="btn btn-gold" href="/platforms">See Platforms</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Core Features ===== -->
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Game Systems</div>
+        <h2>Core Features at a Glance</h2>
+        <p>The mechanics that define the experience, summarized for new players before you dive into the full guides.</p>
+      </div>
+      <div class="feat-grid">
+        <article class="feat-card">
+          <div class="feat-num">01</div>
+          <h3>Command Battles</h3>
+          <p>Turn-based fights with no random encounters — enemies are visible on the field before combat begins.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-num">02</div>
+          <h3>Another Force</h3>
+          <p>Attacks charge a shared gauge; when full, it unlocks continuous follow-up attacks from the whole party.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-num">03</div>
+          <h3>A Roster of 19</h3>
+          <p>Each companion brings a party role, skill trees, personal quests and kinship quests that tie them together.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-num">04</div>
+          <h3>Time Travel</h3>
+          <p>One story spans three eras — an ancient world of spirits, a present kingdom and a skybound future city.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-num">05</div>
+          <h3>Cat Codex</h3>
+          <p>Register 56 cats across the world to let them follow Aldo — a classic collectible running thread.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-num">06</div>
+          <h3>New Game+</h3>
+          <p>Carry your party into a second run with a new companion, exclusive gear and branching endings.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-num">07</div>
+          <h3>Crafting &amp; Respec</h3>
+          <p>Forge gear from materials, and reset ability points anytime with the River of Time Water.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-num">08</div>
+          <h3>Free Demo</h3>
+          <p>Play the opening chapters for free on any platform, with save data that carries into the full release.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -144,6 +247,24 @@ const faqs = [
           <p>Character quests deepen the story one companion at a time, while kinship quests tie the party together across eras.</p>
           <div class="char-tags">
             <span>Aldo</span><span>Feinne</span><span>Cyrus</span><span>Amy</span><span>Riica</span><span>19 total</span>
+          </div>
+          <div class="char-quick">
+            <div class="char-tabs">
+              {charQuick.map((c) => (
+                <button type="button" class:list={{ 'char-tab': true, active: c.name === 'Aldo' }}>{c.name}</button>
+              ))}
+            </div>
+            <div class="char-panels">
+              {charQuick.map((c) => (
+                <div class:list={{ 'char-panel': true, active: c.name === 'Aldo' }}>
+                  <b>{c.name}</b>
+                  <p>{c.line}</p>
+                  <div class="char-chips">
+                    <span>Role · {c.role}</span><span>Element · {c.element}</span><span>Weapon · {c.weapon}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           <div class="cta-row" style="margin-top:26px;">
             <a class="btn btn-primary" href="/characters">Read the Character Guide</a>
@@ -259,4 +380,23 @@ const faqs = [
       <a class="btn btn-gold" href="https://anothereden.games/en/" target="_blank" rel="noopener">Play Another Eden Begins</a>
     </div>
   </section>
+
+  <!-- FAQPage 结构化数据 -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll('.char-tab');
+      var panels = document.querySelectorAll('.char-panel');
+      for (var i = 0; i < tabs.length; i++) {
+        (function (tab, idx) {
+          tab.addEventListener('click', function () {
+            for (var j = 0; j < tabs.length; j++) { tabs[j].classList.remove('active'); }
+            for (var k = 0; k < panels.length; k++) { panels[k].classList.remove('active'); }
+            tab.classList.add('active');
+            panels[idx].classList.add('active');
+          });
+        })(tabs[i], i);
+      }
+    })();
+  </script>
 </Layout>
