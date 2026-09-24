@@ -1,26 +1,22 @@
 // ===== sitemap.xml 静态生成端点 =====
 // Astro 静态构建时在 dist/ 生成单文件 sitemap.xml（不依赖任何构建钩子或 npm scripts）
+// lastmod 统一取构建当天（北京时间），用户要求所有页面日期一致为今天
 import type { APIRoute } from 'astro';
 import { pages } from '../data/pages';
 
 const SITE = import.meta.env.SITE;
 
-const MONTHS: Record<string, string> = {
-  Jan: '01', Feb: '02', Mar: '03', Apr: '04', May: '05', Jun: '06',
-  Jul: '07', Aug: '08', Sep: '09', Oct: '10', Nov: '11', Dec: '12',
-};
-
-function toLastmod(raw: string): string {
-  // 输入如 'Sep 17, 2026'，输出 ISO 日期 '2026-09-17'
-  const m = raw.match(/(\w{3}) (\d{1,2}), (\d{4})/);
-  if (!m || !MONTHS[m[1]]) return '2026-09-25';
-  return `${m[3]}-${MONTHS[m[1]]}-${m[2].padStart(2, '0')}`;
+// 北京时间当天日期（UTC+8），避免 CI 容器时区（UTC）导致日期偏前一天
+function beijingToday(): string {
+  const d = new Date(Date.now() + 8 * 3600 * 1000);
+  return d.toISOString().slice(0, 10);
 }
 
 export const GET: APIRoute = () => {
-  const home = `<url><loc>${SITE}/</loc><lastmod>2026-09-25</lastmod></url>`;
+  const today = beijingToday();
+  const home = `<url><loc>${SITE}/</loc><lastmod>${today}</lastmod></url>`;
   const pageUrls = pages
-    .map((p) => `<url><loc>${SITE}/${p.slug}/</loc><lastmod>${toLastmod(p.updated)}</lastmod></url>`)
+    .map((p) => `<url><loc>${SITE}/${p.slug}/</loc><lastmod>${today}</lastmod></url>`)
     .join('\n');
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
