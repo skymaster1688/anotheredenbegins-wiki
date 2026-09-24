@@ -36,35 +36,72 @@ export const pages: PageData[] = [
     updated: 'Sep 17, 2026',
     sections: [
       {
-        h: 'Getting Started',
+        h: 'Getting Started with Another Eden Begins',
         text:
-          'The story opens in Baruoki Village, where Aldo trains with Darunis and helps with village errands. Early on you will earn the Village Guard Proof badge — a +1 MP Regen badge that restores 10 MP per turn, worth keeping through the first chapters. Follow the story into the Moonlight Forest, where the journey truly begins.',
+          'The story opens in Baruoki Village, where Aldo trains with Darunis and helps with village errands. Early on you will earn the Village Guard Proof badge — a +1 MP Regen badge that restores 10 MP per turn, worth keeping through the first chapters. Chests in the opening area hold a Longsword, a Leather Bangle and the Ruby Staff for Feinne, and an underground cave hides 500 Git plus the River of Time Water respec item. Follow the story into the Moonlight Forest, where the journey truly begins — but be warned that your first meeting with the Beast King is a scripted defeat, so save your items. After the Vares fight you step through a rift into a world 800 years in the future, and the full adventure opens up from there.',
+        list: [
+          'Village Guard Proof badge: +1 MP Regen, restores 10 MP per turn — keep it early.',
+          'Key early chests: Longsword, Leather Bangle and Ruby Staff (for Feinne).',
+          'Underground cave near the start: 500 Git plus the River of Time Water.',
+          'The first Beast King fight is scripted — do not waste healing items there.',
+          'Hidden path near the end of the opening area leads to the Ratle-Carved Statuette.',
+        ],
       },
       {
         h: 'Gameplay Basics',
-        text: 'Two map styles to get used to:',
+        text:
+          'Two map styles to get used to. Free-roaming fields show wandering enemies, treasure chests and quest markers directly — there is no fog of war, so you can plan your route. Dungeon maps unlock gradually as you explore, and clearing them in full reveals the way forward. Chests hide weapons, bangles and items: a Longsword, Leather Bangle and Ruby Staff (for Feinne) appear early, and an underground cave holds 500 Git plus the River of Time Water respec item. The world energy of Prisma comes in four elements — fire, water, earth and wind — and drives both skills and field puzzles, so pay attention to element colours when solving puzzles or picking targets.',
         list: [
-          'Free-roaming fields show wandering enemies, treasure chests and quest markers directly — no fog of war.',
-          'Dungeon maps unlock gradually as you explore, so clearing them in full reveals the way forward.',
-          'Chests hide weapons, bangles and items — a Longsword, Leather Bangle and Ruby Staff (for Feinne) appear early, and an underground cave holds 500 Git plus the River of Time Water respec item.',
+          'Camps matter: the Moonlight Forest Edge unlocks a Camp where you rest and cook meals for battle buffs.',
+          'The Industrial Ruins Sky Bridge Camp unlocks Gift-giving, which raises Kinship between companions.',
+          'In Route 99, an NPC opens the Junk Shop, where Crimson Gems are traded for consumables.',
         ],
       },
       {
         h: 'Battle Basics',
         text:
-          'Battles are command-based with no random encounters. Attacks build the Another Force gauge, which unlocks continuous follow-up attacks when full. Build a balanced party of damage, support and healing, and learn each character’s Chain Skill timing.',
+          'Battles are command-based with no random encounters — enemies are visible on the field, so you can choose your fights deliberately. Attacks build the Another Force gauge, which unlocks continuous follow-up attacks when full; saving it for boss fights is the standard strategy. Build a balanced party of damage, support and healing, and learn each character’s Chain Skill timing, because Chain Skills trigger automatically once their CP gauge fills. Horror-type enemies sit a class above normal foes: they guard valuable chests, are far stronger than anything around them, and drop their own badges when defeated. Fighting them the first time you meet them is usually the smartest path.',
+        list: [
+          'Save Another Force for bosses and dangerous encounters.',
+          'Chain Skills fire automatically once the CP gauge is full.',
+          'Horror enemies (Stoneguard Abbetos, Forest Guardian, Vibrant Talon, Arianhod, Vengeful Soldier, Durable Agateram) drop unique badges.',
+        ],
       },
       {
         h: 'Character Basics',
         text:
-          'Beyond the Main Party you can prepare up to 3 Another Parties, swapped in with Valor commands. Characters in either party earn full EXP and Kinship EXP; characters left out of both gain nothing, so rotate freely.',
+          'Beyond the Main Party you can prepare up to 3 Another Parties, swapped in with Valor commands. Characters in either party earn full EXP and Kinship EXP; characters left out of both gain nothing, so rotate freely. Each companion brings a party role, personal skill trees, character quests and kinship quests. Finish a character’s full quest line to earn their Character Badge — equip it on another character of the same weapon type and they can use that character’s Chain Skill, which lets units gain element coverage they normally lack. Encounter Quests introduce each companion, Character Quests deepen their personal stories, and Kinship Quests unlock as your bonds grow across the three eras.',
+      },
+      {
+        h: 'Another Eden Begins Walkthrough Overview',
+        text:
+          'The main story runs 26 chapters across three eras. The early chapters (1-5) cover Baruoki, the Moonlight Forest, the sky city Elzion and the first clash with the Synth Humans. The middle arc (6-13) moves through Acteul, Palsifal Palace, the man-eating marsh and the Tower of Time, and ends with Miglance Castle in flames. The later arc (14-20) returns to Elzion, reveals the truth about Chronos, survives the Great Timequake and faces the Synth Hydra. The finale (21-26) climbs the Tower of Stars, infiltrates the Beast King’s Castle, storms the Dimensional Vortex and ends with the battle against Chronos’s Umbra before the emotional farewell of “All My Friends: Beyond Time and Space.”',
+        list: [
+          'Chapters 1-5: Baruoki → Moonlight Forest → Elzion → Synth Humans.',
+          'Chapters 6-13: Acteul, Palsifal Palace, Tower of Time, Miglance Castle.',
+          'Chapters 14-20: Return to Elzion, Chronos, the Great Timequake, Synth Hydra.',
+          'Chapters 21-26: Tower of Stars, Beast King’s Castle, Dimensional Vortex, Chronos’s Umbra.',
+        ],
+      },
+      {
+        h: 'Progression & New Game+',
+        text:
+          'Progression is character-first: level up in battle, spend ability points on two skill trees per character, forge gear from materials, and reset ability points anytime with the River of Time Water. Completing the main story unlocks New Game+ — your party keeps their strength, a mysterious girl named Ramiu guides the second journey, and the choices you make branch into more than 10 different endings. New Game+ also adds exclusive equipment and a new companion to recruit, which is why many players treat the first playthrough as preparation for the second.',
+        list: [
+          'Ability points can be reset freely with the River of Time Water.',
+          'New Game+ keeps character strength and adds exclusive gear.',
+          'More than 10 endings branch from choices made in New Game+.',
+        ],
       },
       {
         h: 'Useful Tips',
         list: [
-          'Register cats to your Cat Codex — there are 56 across the game, and registered cats can follow Aldo. Early finds: Varuo (start), Langelo (Baruoki NE), Peasuke (Baruoki SE), Leale (Nuaru Uplands west), plus Kassy, Gust, Gear, Chain and Millie around Elzion.',
+          'Register cats to your Cat Codex — there are 56 across the game, and registered cats can follow Aldo. Early finds: Varuo (start), Langelo (Baruoki NE), Peasuke (Baruoki SE), Leale (Nuaru Uplands west), Kassy and Gust (Elzion airport), Gear (Theta district), Chain and Millie (Gamma district), plus Kotaro and Sabi on Route 99.',
           'Horror-type enemies (Stoneguard Abbetos, Forest Guardian, Vibrant Talon, Arianhod, Vengeful Soldier, Durable Agateram) are far stronger than normal foes, guard valuable chests, and drop their own badges when defeated. Fight them the first time you meet them.',
           'The River of Time Water lets you reset character ability points (respec), so experiment freely with builds.',
+          'Cook meals at Camps before tough fights — the battle buffs stack and make longer bosses noticeably easier.',
+          'Trade Crimson Gems at the Route 99 Junk Shop for consumables instead of hoarding them.',
+          'On Steam you get 28 achievements, full controller support and automatic cloud saves.',
         ],
       },
       {
@@ -73,6 +110,10 @@ export const pages: PageData[] = [
           'How many chapters are there? — The main story runs 26 chapters.',
           'Is the game single-player? — Yes, it is fully single-player.',
           'Does progress carry into New Game+? — Yes, characters keep their strength; see the Story page for details.',
+          'Is there a demo? — Yes, a free demo covers the opening chapters and saves carry over.',
+          'How many endings are there? — More than 10, unlocked through New Game+ choices.',
+          'Can I respec characters? — Yes, using the River of Time Water item.',
+          'Does it support controllers? — Yes, full controller support on Steam.',
         ],
       },
     ],
