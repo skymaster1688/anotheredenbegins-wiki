@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://anotheredenbegins.com/sitemap-index.xml
+Sitemap: https://anotheredenbegins.com/sitemap.xml
