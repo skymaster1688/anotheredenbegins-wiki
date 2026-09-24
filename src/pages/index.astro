@@ -89,6 +89,21 @@ const charQuick = [
     role: 'Damage', element: 'Water', weapon: 'Katana',
   },
 ];
+
+// —— 站内快速搜索索引（真实页 + 即将上线页预告）——
+const searchIndex = pages.map((p) => ({ slug: p.slug, title: p.title, description: p.description }));
+const comingSoon = [
+  { slug: 'codes', title: 'Codes', desc: 'Active redeem codes' },
+  { slug: 'tier-list', title: 'Tier List', desc: 'Best character rankings' },
+  { slug: 'release-date', title: 'Release Date', desc: 'Release date, price and pre-order' },
+  { slug: 'demo', title: 'Demo', desc: 'Demo guide and details' },
+  { slug: 'editions', title: 'Editions', desc: 'Physical & collector’s editions' },
+  { slug: 'review', title: 'Review', desc: 'Review and gameplay analysis' },
+  { slug: 'vs-another-eden', title: 'Vs Another Eden', desc: 'Differences between the two games' },
+  { slug: 'gacha', title: 'Gacha', desc: 'Gacha system guide' },
+  { slug: 'language', title: 'Language', desc: 'Supported languages' },
+  { slug: 'voice-actors', title: 'Voice Actors', desc: 'Voice cast list' },
+];
 const faqLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -138,6 +153,16 @@ const faqLd = {
         <h2>Your Another Eden Begins Journey</h2>
         <p>Four entry points into the wiki — from your first command battle to all ten endings.</p>
       </div>
+      <div class="search-box" id="quickSearch">
+        <div class="search-row">
+          <input type="search" id="searchInput" placeholder="Search the wiki — try “tier list”, “ps5”, “demo”…" aria-label="Search the wiki">
+          <button type="button" id="searchBtn">Search</button>
+        </div>
+        <div class="search-hint">Try “demo”, “ps5”, “tier list”, “DLC” or a character name — pages still in the rollout are shown as coming soon.</div>
+        <ul class="search-results" id="searchResults" hidden></ul>
+      </div>
+      <script type="application/json" id="searchIndex" set:html={JSON.stringify(searchIndex)} />
+      <script type="application/json" id="comingSoonData" set:html={JSON.stringify(comingSoon)} />
       <div class="start-cards">
         {featured.map((g, i) => (
           <article class="start-card">
@@ -163,7 +188,7 @@ const faqLd = {
         <div class="about-copy">
           <div class="kicker">The Game</div>
           <h2>What is Another Eden Begins?</h2>
-          <p><b>Another Eden Begins</b> is a single-player time-traveling RPG developed by <b>WRIGHT FLYER STUDIOS</b> and created with scenario writer and director <b>Masato Kato</b>. Players follow <b>Aldo</b> across different eras while trying to save his sister <b>Feinne</b>.</p>
+          <p>It is a single-player time-traveling RPG developed by <b>WRIGHT FLYER STUDIOS</b> and created with scenario writer and director <b>Masato Kato</b>. Players follow <b>Aldo</b> across different eras while trying to save his sister <b>Feinne</b>.</p>
           <p>The game features strategic command battles, chain skills, Another Force, character quests, kinship quests, crafting, and a New Game+ mode with a new character and more than 10 different endings.</p>
           <p>Behind it is a pedigree JRPG team: scenario director Masato Kato and composer Yasunori Mitsuda return for Begins, and their fingerprints show in the chapter structure, the era-spanning timeline, and the way companion quests unfold. Whether you played the original mobile title or are coming in fresh, this hub collects the essentials — how battles work, who every character is, where the story goes, and what each platform and DLC pack offers.</p>
           <div class="about-facts">
@@ -243,7 +268,7 @@ const faqLd = {
         <div class="char-side">
           <div class="kicker">The Cast</div>
           <h2>Meet the Characters</h2>
-          <p>Another Eden Begins ships with <b>19 playable characters</b>. Each one brings a party role, personal quests and kinship quests — from the swordsman Aldo to the frog samurai Cyrus, the hunter Amy and the princess Feinne.</p>
+          <p>The game ships with <b>19 playable characters</b>. Each one brings a party role, personal quests and kinship quests — from the swordsman Aldo to the frog samurai Cyrus, the hunter Amy and the princess Feinne.</p>
           <p>Character quests deepen the story one companion at a time, while kinship quests tie the party together across eras.</p>
           <div class="char-tags">
             <span>Aldo</span><span>Feinne</span><span>Cyrus</span><span>Amy</span><span>Riica</span><span>19 total</span>
@@ -319,7 +344,7 @@ const faqLd = {
         <div class="tl-item l">
           <div class="tl-date">Sep 16, 2026</div>
           <div class="tl-title">Worldwide launch</div>
-          <div class="tl-desc">Another Eden Begins launches on Steam, Nintendo Switch and Switch 2 — published by Wright Flyer Studios / STUDIO PRISMA.</div>
+          <div class="tl-desc">The game launches on Steam, Nintendo Switch and Switch 2 — published by Wright Flyer Studios / STUDIO PRISMA.</div>
         </div>
         <div class="tl-axis"><div class="dot"></div><div class="line"></div></div>
         <div></div>
@@ -396,6 +421,61 @@ const faqLd = {
             panels[idx].classList.add('active');
           });
         })(tabs[i], i);
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      var input = document.getElementById('searchInput');
+      var results = document.getElementById('searchResults');
+      if (!input || !results) return;
+      var idxNode = document.getElementById('searchIndex');
+      var comingNode = document.getElementById('comingSoonData');
+      var idx = idxNode ? JSON.parse(idxNode.textContent) : [];
+      var coming = comingNode ? JSON.parse(comingNode.textContent) : [];
+      input.addEventListener('input', function () {
+        var q = input.value.trim().toLowerCase();
+        results.innerHTML = '';
+        if (q.length < 2) { results.hidden = true; return; }
+        var hits = idx.filter(function (p) {
+          return (p.title + ' ' + p.description).toLowerCase().indexOf(q) !== -1;
+        });
+        var comingHits = coming.filter(function (p) {
+          return (p.title + ' ' + p.desc).toLowerCase().indexOf(q) !== -1;
+        });
+        if (!hits.length && !comingHits.length) {
+          var li = document.createElement('li');
+          li.className = 'sr-none';
+          li.textContent = 'No matching pages yet — try “ps5”, “demo” or “characters”.';
+          results.appendChild(li);
+        }
+        hits.forEach(function (p) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = '/' + p.slug + '/';
+          a.textContent = p.title;
+          li.appendChild(a);
+          var d = document.createElement('span');
+          d.textContent = p.description;
+          li.appendChild(d);
+          results.appendChild(li);
+        });
+        comingHits.forEach(function (p) {
+          var li = document.createElement('li');
+          li.className = 'sr-coming';
+          var b = document.createElement('b');
+          b.textContent = p.title + ' — coming soon';
+          li.appendChild(b);
+          var d = document.createElement('span');
+          d.textContent = p.desc;
+          li.appendChild(d);
+          results.appendChild(li);
+        });
+        results.hidden = false;
+      });
+      var btn = document.getElementById('searchBtn');
+      if (btn) {
+        btn.addEventListener('click', function () { input.dispatchEvent(new Event('input')); });
       }
     })();
   </script>
