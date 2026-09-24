@@ -1,0 +1,262 @@
+---
+// 首页内容取自 首页信息.md 的 home JSON 结构（hero / start / aboutGame / finalCta / footer）
+import Layout from '../layouts/Layout.astro';
+import { pages } from '../data/pages';
+
+const featured = pages.filter((p) => ['guide', 'characters', 'story', 'dlc'].includes(p.slug));
+
+const hero = {
+  eyebrow: 'Fan-Made Community Wiki',
+  title: 'Another Eden Begins',
+  description:
+    'Another Eden Begins is a time-traveling RPG from Wright Flyer Studios and Masato Kato, featuring command battles, 19 playable characters, New Game+, and more than 10 different endings.',
+  stats: [
+    { value: 'Sep 2026', label: 'Launched' },
+    { value: 'Sep 17', label: 'Last updated' },
+    { value: '19', label: 'Playable characters' },
+    { value: '10+', label: 'Endings' },
+  ],
+};
+
+const aboutStats = [
+  { label: 'Developer', value: 'WRIGHT FLYER STUDIOS' },
+  { label: 'Platform', value: 'Nintendo Switch · Switch 2 · Steam' },
+  { label: 'Genre', value: 'Time-Traveling RPG' },
+  { label: 'Playable Characters', value: '19' },
+  { label: 'New Game+ Endings', value: '10+' },
+  { label: 'Players', value: 'Single-player' },
+];
+
+const faqs = [
+  {
+    q: 'What is Another Eden Begins?',
+    a: 'A single-player time-traveling RPG developed by WRIGHT FLYER STUDIOS, created with scenario writer and director Masato Kato. You play as Aldo, travelling across eras to save his sister Feinne.',
+  },
+  {
+    q: 'Which platforms is it available on?',
+    a: 'Nintendo Switch, Nintendo Switch 2 and PC via Steam. It launched worldwide on September 16, 2026.',
+  },
+  {
+    q: 'How many playable characters are there?',
+    a: '19 playable characters, each with their own party role, character quests and kinship quests.',
+  },
+  {
+    q: 'How many endings does the game have?',
+    a: 'New Game+ opens up more than 10 different endings, with a new character joining the journey.',
+  },
+  {
+    q: 'Is there an official Discord?',
+    a: 'No official Discord has been confirmed. The active community hub is the Reddit community r/AnotherEdenGlobal.',
+  },
+];
+---
+
+<Layout title="Another Eden Begins Wiki — Guides, Characters" path="/">
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="hero-stars" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow">{hero.eyebrow}</span>
+        <h1>Another Eden <em>Begins</em></h1>
+        <p class="hero-desc">{hero.description}</p>
+        <div class="hero-stats">
+          {hero.stats.map((s) => (
+            <div class="stat"><b>{s.value}</b><span>{s.label}</span></div>
+          ))}
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/guide">Start Beginner Guide</a>
+          <a class="btn btn-gold" href="/characters">Meet the Characters</a>
+          <a class="btn btn-ghost" href="/dlc">Explore DLC</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=HTdLYm94TZA" target="_blank" rel="noopener">Official media</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="frame">
+          <img src="/assets/hero-keyart.jpg" alt="Another Eden Begins official key art featuring Aldo with a blazing sword, Feinne and a black cat" width="480" height="384">
+          <span class="cap">Official key art · ©WFS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Start Here ===== -->
+  <section class="section" id="start">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Start Here</div>
+        <h2>Your Another Eden Begins Journey</h2>
+        <p>Four entry points into the wiki — from your first command battle to all ten endings.</p>
+      </div>
+      <div class="start-cards">
+        {featured.map((g, i) => (
+          <article class="start-card">
+            <div class="start-num">0{i + 1}</div>
+            <h3>{g.title}</h3>
+            <p>{g.description}</p>
+            <a class="go" href={`/${g.slug}`}>Read guide
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section sec-accent" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-media">
+          <img src="/assets/world-scene.jpg" alt="A lone traveler looks out over a ruined fantastical landscape in Another Eden Begins" width="599" height="337" loading="lazy">
+        </div>
+        <div class="about-copy">
+          <div class="kicker">The Game</div>
+          <h2>What is Another Eden Begins?</h2>
+          <p><b>Another Eden Begins</b> is a single-player time-traveling RPG developed by <b>WRIGHT FLYER STUDIOS</b> and created with scenario writer and director <b>Masato Kato</b>. Players follow <b>Aldo</b> across different eras while trying to save his sister <b>Feinne</b>.</p>
+          <p>The game features strategic command battles, chain skills, Another Force, character quests, kinship quests, crafting, and a New Game+ mode with a new character and more than 10 different endings.</p>
+          <div class="about-facts">
+            {aboutStats.map((f) => (
+              <div class="fact"><div class="k">{f.label}</div><div class="v">{f.value}</div></div>
+            ))}
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/guide">Explore All Guides</a>
+            <a class="btn btn-gold" href="/platforms">See Platforms</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Characters ===== -->
+  <section class="section sec-accent" id="characters">
+    <div class="wrap">
+      <div class="char-grid">
+        <div class="char-main">
+          <img src="/assets/characters-group.jpg" alt="Five playable characters from Another Eden Begins: Cyrus, Amy, Aldo, Feinne and Riica" width="1920" height="1157" loading="lazy">
+        </div>
+        <div class="char-side">
+          <div class="kicker">The Cast</div>
+          <h2>Meet the Characters</h2>
+          <p>Another Eden Begins ships with <b>19 playable characters</b>. Each one brings a party role, personal quests and kinship quests — from the swordsman Aldo to the frog samurai Cyrus, the hunter Amy and the princess Feinne.</p>
+          <p>Character quests deepen the story one companion at a time, while kinship quests tie the party together across eras.</p>
+          <div class="char-tags">
+            <span>Aldo</span><span>Feinne</span><span>Cyrus</span><span>Amy</span><span>Riica</span><span>19 total</span>
+          </div>
+          <div class="cta-row" style="margin-top:26px;">
+            <a class="btn btn-primary" href="/characters">Read the Character Guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Story ===== -->
+  <section class="section" id="story">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Story &amp; Chapters</div>
+        <h2>One Journey Across Eras</h2>
+        <p>Follow Aldo as he travels between the ancient, present and future eras of the Another Eden world to save his sister Feinne — and discover how Begins fits into the larger Another Eden universe.</p>
+      </div>
+      <div class="start-cards">
+        <article class="start-card">
+          <div class="start-num">ANTIQUITY</div>
+          <h3>Ancient Eras</h3>
+          <p>Journey into the distant past, where spirits, elementals and kings shape a world before written memory.</p>
+        </article>
+        <article class="start-card">
+          <div class="start-num">PRESENT</div>
+          <h3>The Present</h3>
+          <p>Begin in Baruoki Village with Aldo and Feinne — and the day everything changed.</p>
+        </article>
+        <article class="start-card">
+          <div class="start-num">FUTURE</div>
+          <h3>The Future</h3>
+          <p>Humanity escaped to the skies — the Shining City of Elzion casts light, and a bitter shadow.</p>
+        </article>
+        <article class="start-card">
+          <div class="start-num">NG+</div>
+          <h3>New Game+ &amp; Endings</h3>
+          <p>After the main story, New Game+ opens a new character and more than 10 different endings.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== News 时间轴 ===== -->
+  <section class="section sec-accent" id="news">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Signal · News</div>
+        <h2>Latest News</h2>
+        <p>Key milestones for Another Eden Begins, tracked from official sources.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item l">
+          <div class="tl-date">Sep 16, 2026</div>
+          <div class="tl-title">Worldwide launch</div>
+          <div class="tl-desc">Another Eden Begins launches on Steam, Nintendo Switch and Switch 2 — published by Wright Flyer Studios / STUDIO PRISMA.</div>
+        </div>
+        <div class="tl-axis"><div class="dot"></div><div class="line"></div></div>
+        <div></div>
+
+        <div></div>
+        <div class="tl-axis"><div class="dot"></div><div class="line"></div></div>
+        <div class="tl-item r">
+          <div class="tl-date">Sep 17, 2026</div>
+          <div class="tl-title">Final Trailer released</div>
+          <div class="tl-desc">Wright Flyer Studios publishes the official Final Trailer for the game.</div>
+        </div>
+
+        <div class="tl-item l">
+          <div class="tl-date">Sep 2026</div>
+          <div class="tl-title">Tokyo Game Show 2026</div>
+          <div class="tl-desc">Hands-on playable builds are available at Tokyo Game Show 2026.</div>
+        </div>
+        <div class="tl-axis"><div class="dot"></div><div class="line"></div></div>
+        <div></div>
+
+        <div></div>
+        <div class="tl-axis"><div class="dot"></div></div>
+        <div class="tl-item r">
+          <div class="tl-date">Live</div>
+          <div class="tl-title">Steam: Mostly Positive · 72%</div>
+          <div class="tl-desc">Current Steam user rating, based on 110 reviews at launch.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Quick Answers</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>The questions new players ask most.</p>
+      </div>
+      <div class="faq-list">
+        {faqs.map((f, i) => (
+          <div class:list={{ 'faq-item': true, open: i === 0 }}>
+            <div class="faq-q"><span class="mark">+</span> {f.q}</div>
+            <div class="faq-a">{f.a}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 最终 CTA ===== -->
+  <section class="final-cta">
+    <div class="kicker">Ready to begin?</div>
+    <h2>Ready to Master Another Eden Begins?</h2>
+    <p>From your first steps with Aldo to character quests, strategic battles, New Game+, and its many endings, our community wiki brings the key information together.</p>
+    <div class="cta-row" style="justify-content:center;">
+      <a class="btn btn-primary" href="/guide">Read the Beginner Guide</a>
+      <a class="btn btn-gold" href="https://anothereden.games/en/" target="_blank" rel="noopener">Play Another Eden Begins</a>
+    </div>
+  </section>
+</Layout>

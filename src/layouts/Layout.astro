@@ -1,0 +1,182 @@
+---
+// ===== 全站公共布局 =====
+// 所有页面的 <head>、导航、<footer> 都由这里统一管理。
+// 统计代码、广告代码、自定义头尾片段：只改下面的 siteConfig，全站所有页面立即生效。
+
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** 当前路径，用于导航高亮，如 "/"、"/guide" */
+  path?: string;
+}
+
+const { title, description, path = '/' } = Astro.props;
+
+const siteConfig = {
+  // —— 统计代码（如 Google Analytics 4）—— 粘贴到此处，将注入每个页面的 </head> 前
+  analyticsHead: `
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+  `,
+  // —— 广告代码（head 段，如 AdSense 头部片段）—— 注入 </head> 前
+  adHead: `
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+  `,
+  // —— 广告代码（body 段，如页面级广告位、自定义代码块）—— 注入每个页面 </body> 前
+  adBody: `
+    <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto"></ins> -->
+  `,
+};
+
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/guide', label: 'Guide' },
+  { href: '/characters', label: 'Characters' },
+  { href: '/story', label: 'Story' },
+  { href: '/platforms', label: 'Platforms' },
+  { href: '/dlc', label: 'DLC' },
+  { href: '/#news', label: 'News' },
+];
+
+const siteName = 'Another Eden Begins Wiki';
+const defaultDescription =
+  'Another Eden Begins Wiki with guides, characters, story coverage, demo tips, DLC, endings, platforms, and gameplay information for this time-traveling RPG.';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}{title === siteName ? '' : ` · ${siteName}`}</title>
+  <meta name="description" content={description ?? defaultDescription}>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#101427">
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Cinzel:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+  <Fragment set:html={siteConfig.analyticsHead} />
+  <Fragment set:html={siteConfig.adHead} />
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/" aria-label="{siteName} home">
+        <img class="brand-mark" src="/favicon.svg" width="30" height="30" alt="">
+        <span class="brand-name">ANOTHER EDEN <span class="brand-sub">BEGIN&nbsp;·&nbsp;WIKI</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        {nav.map((item) => (
+          <a href={item.href} class:list={{ active: path === item.href }}>{item.label}</a>
+        ))}
+        <div class="lang">
+          <button class="cur" data-lang="en">EN</button>
+          <button data-lang="ja">JA</button>
+          <button data-lang="ko">KO</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>{siteName}</h4>
+          <p>An independent fan-made guide site for players exploring the time-traveling RPG. It organizes beginner guides, characters, story information, DLC, gameplay systems, and endings in one place.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="/guide">Beginner Guide</a></li>
+            <li><a href="/characters">Characters</a></li>
+            <li><a href="/story">Story &amp; Chapters</a></li>
+            <li><a href="/platforms">Platforms</a></li>
+            <li><a href="/dlc">DLC</a></li>
+            <li><a href="/#news">News</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Community &amp; Official</h4>
+          <ul class="footer-links">
+            <li><a href="https://anothereden.games/en/" target="_blank" rel="noopener">Play Another Eden Begins</a></li>
+            <li><a href="https://www.youtube.com/@wrightflyerstudios" target="_blank" rel="noopener">Official YouTube</a></li>
+            <li><a href="https://www.reddit.com/r/AnotherEdenGlobal/" target="_blank" rel="noopener">Reddit — r/AnotherEdenGlobal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Another Eden Begins guides, characters, story, walkthroughs, DLC, endings, demo, gameplay, and platform information. Not affiliated with Wright Flyer Studios.</span>
+        <span><a href="#" data-toast="Privacy policy is under construction">Privacy Policy</a> · <a href="#" data-toast="Terms of service are under construction">Terms of Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <Fragment set:html={siteConfig.adBody} />
+
+  <script>
+    // 全站交互：toast / 移动端导航 / FAQ 手风琴 / 语言切换占位
+    (function () {
+      var toastEl = document.getElementById('toast');
+      var toastTimer = null;
+      function showToast(msg) {
+        if (!toastEl) return;
+        toastEl.textContent = msg;
+        toastEl.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 2600);
+      }
+      document.addEventListener('click', function (e) {
+        var t = e.target.closest('[data-toast]');
+        if (t) { e.preventDefault(); showToast(t.getAttribute('data-toast') || 'Coming soon'); }
+      });
+
+      var navToggle = document.getElementById('navToggle');
+      var navLinks = document.getElementById('navLinks');
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function () { navLinks.classList.toggle('open'); });
+      }
+
+      var faqItems = document.querySelectorAll('.faq-item');
+      for (var i = 0; i < faqItems.length; i++) {
+        (function (item) {
+          var q = item.querySelector('.faq-q');
+          if (q) {
+            q.addEventListener('click', function () {
+              var wasOpen = item.classList.contains('open');
+              for (var j = 0; j < faqItems.length; j++) { faqItems[j].classList.remove('open'); }
+              if (!wasOpen) { item.classList.add('open'); }
+            });
+          }
+        })(faqItems[i]);
+      }
+
+      var langBtns = document.querySelectorAll('.lang button');
+      for (var k = 0; k < langBtns.length; k++) {
+        (function (btn) {
+          btn.addEventListener('click', function () {
+            var lang = btn.getAttribute('data-lang');
+            if (lang === 'en') { return; }
+            showToast((lang === 'ja' ? '日本語版' : '한국어판') + ' is coming soon');
+          });
+        })(langBtns[k]);
+      }
+    })();
+  </script>
+</body>
+</html>

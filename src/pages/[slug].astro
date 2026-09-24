@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { pages } from '../data/pages';
+
+export function getStaticPaths() {
+  return pages.map((p) => ({
+    params: { slug: p.slug },
+    props: { page: p },
+  }));
+}
+
+const { page } = Astro.props;
+const { title, seoTitle, seoDescription, description, category, updated, slug, sections } = page;
+---
+
+<Layout title={seoTitle} description={seoDescription} path={`/${slug}`}>
+  <section class="page-hero">
+    <div class="wrap">
+      <a class="back-link" href="/">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        Home
+      </a>
+      <div class="kicker">{category}</div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+    </div>
+  </section>
+
+  <section class="page-body">
+    <div class="wrap">
+      <div class="guide-meta">
+        <span>{category}</span>
+        <span>Updated {updated}</span>
+        <span>Another Eden Begins Wiki</span>
+      </div>
+      <div class="prose">
+        {sections.map((sec) => (
+          <div>
+            <h2>{sec.h}</h2>
+            {sec.text && <p>{sec.text}</p>}
+            {sec.list && (
+              <ul>
+                {sec.list.map((li) => <li>{li}</li>)}
+              </ul>
+            )}
+          </div>
+        ))}
+        <div style="margin-top:48px;padding:26px;border:1px solid var(--border);border-radius:16px;background:var(--card);">
+          <div style="font-family:var(--serif);font-weight:700;color:var(--gold);margin-bottom:8px;">More pages coming</div>
+          <p style="color:var(--text-dim);font-size:14.5px;">Codes, tier list, release date, demo, editions and more pages are next in the rollout — check back soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
