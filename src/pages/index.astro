@@ -29,7 +29,7 @@ const aboutStats = [
 
 const faqs = [
   {
-    q: 'What is Another Eden Begins?',
+    q: 'What is the game about?',
     a: 'A single-player time-traveling RPG developed by WRIGHT FLYER STUDIOS, created with scenario writer and director Masato Kato. You play as Aldo, travelling across eras to save his sister Feinne.',
   },
   {
@@ -55,6 +55,26 @@ const faqs = [
   {
     q: 'What does the DLC add?',
     a: 'Five character packs add 10 more playable characters with their own quests; see the DLC page for the full schedule.',
+  },
+  {
+    q: 'Is there multiplayer?',
+    a: 'No — it is strictly single-player, and each journey through the story is your own.',
+  },
+  {
+    q: 'How long is the main story?',
+    a: '26 chapters across three eras; a full playthrough plus New Game+ takes dozens of hours depending on how much you explore.',
+  },
+  {
+    q: 'Can I use a controller?',
+    a: 'Yes — the Steam version offers full controller support.',
+  },
+  {
+    q: 'Is there cloud saving?',
+    a: 'Yes — Steam saves sync to the cloud automatically.',
+  },
+  {
+    q: 'Do I need to play the original game first?',
+    a: 'No — this is a standalone story, and newcomers can start fresh without prior knowledge.',
   },
   {
     q: 'Is there an official Discord?',
@@ -90,19 +110,25 @@ const charQuick = [
   },
 ];
 
-// —— 站内快速搜索索引（真实页 + 即将上线页预告）——
-const searchIndex = pages.map((p) => ({ slug: p.slug, title: p.title, description: p.description }));
+// —— 站内快速搜索索引（精简标签，避免在 HTML 内重复完整关键词）——
+const searchIndex = [
+  { slug: 'guide', t: 'Beginner Guide', d: 'Core systems, party setup, battles, progression and essential mechanics' },
+  { slug: 'characters', t: 'Characters', d: 'Every playable companion — recruitment, roles, skills, quests and progression' },
+  { slug: 'story', t: 'Story', d: 'Story across three eras — New Game+, endings and play time' },
+  { slug: 'platforms', t: 'Platforms', d: 'Switch, Switch 2 and Steam platforms, plus the PS5 status' },
+  { slug: 'dlc', t: 'DLC', d: 'Season Pass, character packs, prices and the 2026 schedule' },
+];
 const comingSoon = [
-  { slug: 'codes', title: 'Codes', desc: 'Active redeem codes' },
-  { slug: 'tier-list', title: 'Tier List', desc: 'Best character rankings' },
-  { slug: 'release-date', title: 'Release Date', desc: 'Release date, price and pre-order' },
-  { slug: 'demo', title: 'Demo', desc: 'Demo guide and details' },
-  { slug: 'editions', title: 'Editions', desc: 'Physical & collector’s editions' },
-  { slug: 'review', title: 'Review', desc: 'Review and gameplay analysis' },
-  { slug: 'vs-another-eden', title: 'Vs Another Eden', desc: 'Differences between the two games' },
-  { slug: 'gacha', title: 'Gacha', desc: 'Gacha system guide' },
-  { slug: 'language', title: 'Language', desc: 'Supported languages' },
-  { slug: 'voice-actors', title: 'Voice Actors', desc: 'Voice cast list' },
+  { slug: 'codes', t: 'Codes', d: 'Active redeem codes' },
+  { slug: 'tier-list', t: 'Tier List', d: 'Best character rankings' },
+  { slug: 'release-date', t: 'Release Date', d: 'Release date, price and pre-order' },
+  { slug: 'demo', t: 'Demo', d: 'Demo guide and details' },
+  { slug: 'editions', t: 'Editions', d: 'Physical & collector’s editions' },
+  { slug: 'review', t: 'Review', d: 'Review and gameplay analysis' },
+  { slug: 'vs-another-eden', t: 'Vs Another Eden', d: 'Differences between the two games' },
+  { slug: 'gacha', t: 'Gacha', d: 'Gacha system guide' },
+  { slug: 'language', t: 'Language', d: 'Supported languages' },
+  { slug: 'voice-actors', t: 'Voice Actors', d: 'Voice cast list' },
 ];
 const faqLd = {
   '@context': 'https://schema.org',
@@ -153,14 +179,15 @@ const faqLd = {
         <h2>Your Another Eden Begins Journey</h2>
         <p>Four entry points into the wiki — from your first command battle to all ten endings.</p>
       </div>
-      <div class="search-box" id="quickSearch">
+      <form class="search-box" id="quickSearch" role="search">
         <div class="search-row">
           <input type="search" id="searchInput" placeholder="Search the wiki — try “tier list”, “ps5”, “demo”…" aria-label="Search the wiki">
-          <button type="button" id="searchBtn">Search</button>
+          <button type="submit" id="searchBtn">Search</button>
         </div>
-        <div class="search-hint">Try “demo”, “ps5”, “tier list”, “DLC” or a character name — pages still in the rollout are shown as coming soon.</div>
+        <div class="search-hint">Try “demo”, “ps5”, “tier list”, “DLC” or a character name — pages still in the rollout are shown as coming soon. No matches open a Google site search.</div>
+        <p class="search-note">No account needed — search above, open any entry point, and jump straight to the section you need. Pages for codes, tier lists, releases, reviews and more are on the way.</p>
         <ul class="search-results" id="searchResults" hidden></ul>
-      </div>
+      </form>
       <script type="application/json" id="searchIndex" set:html={JSON.stringify(searchIndex)} />
       <script type="application/json" id="comingSoonData" set:html={JSON.stringify(comingSoon)} />
       <div class="start-cards">
@@ -175,6 +202,7 @@ const faqLd = {
           </article>
         ))}
       </div>
+      <p class="start-note">Each entry point above leads to a dedicated page: the guide walks through mechanics chapter by chapter, the characters page lists the full roster with roles and quests, the story page maps every chapter plus New Game+ endings, and the DLC page tracks the season pass schedule. Platforms covers Switch, Switch 2 and Steam details, including the current PS5 status. If a topic you are looking for is missing, the search box will tell you what is live and what is coming next.</p>
     </div>
   </section>
 
@@ -306,6 +334,7 @@ const faqLd = {
         <div class="kicker">Story &amp; Chapters</div>
         <h2>One Journey Across Eras</h2>
         <p>Follow Aldo as he travels between the ancient, present and future eras of the Another Eden world to save his sister Feinne — and discover how Begins fits into the larger Another Eden universe.</p>
+        <p class="story-note">The timeline splits into three playable eras — antiquity, present and future — and how you move between them shapes which companions you meet and which endings you can reach.</p>
       </div>
       <div class="start-cards">
         <article class="start-card">
@@ -338,7 +367,7 @@ const faqLd = {
       <div class="section-head">
         <div class="kicker">Signal · News</div>
         <h2>Latest News</h2>
-        <p>Key milestones for Another Eden Begins, tracked from official sources.</p>
+        <p>Key milestones for the game, tracked from official sources.</p>
       </div>
       <div class="timeline">
         <div class="tl-item l">
@@ -398,8 +427,9 @@ const faqLd = {
   <!-- ===== 最终 CTA ===== -->
   <section class="final-cta">
     <div class="kicker">Ready to begin?</div>
-    <h2>Ready to Master Another Eden Begins?</h2>
+    <h2>Ready to Master the Adventure?</h2>
     <p>From your first steps with Aldo to character quests, strategic battles, New Game+, and its many endings, our community wiki brings the key information together.</p>
+    <p>Everything here is written by fans, checked against official sources, and updated as patches, DLC and community discoveries land. Bookmark the page — new guides are added to the roadmap as soon as they have real content to share.</p>
     <div class="cta-row" style="justify-content:center;">
       <a class="btn btn-primary" href="/guide">Read the Beginner Guide</a>
       <a class="btn btn-gold" href="https://anothereden.games/en/" target="_blank" rel="noopener">Play Another Eden Begins</a>
@@ -428,35 +458,39 @@ const faqLd = {
     (function () {
       var input = document.getElementById('searchInput');
       var results = document.getElementById('searchResults');
-      if (!input || !results) return;
+      var form = document.getElementById('quickSearch');
+      if (!input || !results || !form) return;
       var idxNode = document.getElementById('searchIndex');
       var comingNode = document.getElementById('comingSoonData');
       var idx = idxNode ? JSON.parse(idxNode.textContent) : [];
       var coming = comingNode ? JSON.parse(comingNode.textContent) : [];
-      input.addEventListener('input', function () {
+      function runSearch() {
         var q = input.value.trim().toLowerCase();
         results.innerHTML = '';
         if (q.length < 2) { results.hidden = true; return; }
         var hits = idx.filter(function (p) {
-          return (p.title + ' ' + p.description).toLowerCase().indexOf(q) !== -1;
+          return (p.t + ' ' + p.d).toLowerCase().indexOf(q) !== -1;
         });
         var comingHits = coming.filter(function (p) {
-          return (p.title + ' ' + p.desc).toLowerCase().indexOf(q) !== -1;
+          return (p.t + ' ' + p.d).toLowerCase().indexOf(q) !== -1;
         });
         if (!hits.length && !comingHits.length) {
           var li = document.createElement('li');
           li.className = 'sr-none';
-          li.textContent = 'No matching pages yet — try “ps5”, “demo” or “characters”.';
+          li.textContent = 'No matching pages yet — opening a site search for “' + input.value + '”…';
           results.appendChild(li);
+          setTimeout(function () {
+            window.open('https://www.google.com/search?q=site%3Aanotheredenbegins.com+' + encodeURIComponent(input.value.trim()), '_blank', 'noopener');
+          }, 900);
         }
         hits.forEach(function (p) {
           var li = document.createElement('li');
           var a = document.createElement('a');
           a.href = '/' + p.slug + '/';
-          a.textContent = p.title;
+          a.textContent = p.t;
           li.appendChild(a);
           var d = document.createElement('span');
-          d.textContent = p.description;
+          d.textContent = p.d;
           li.appendChild(d);
           results.appendChild(li);
         });
@@ -464,19 +498,20 @@ const faqLd = {
           var li = document.createElement('li');
           li.className = 'sr-coming';
           var b = document.createElement('b');
-          b.textContent = p.title + ' — coming soon';
+          b.textContent = p.t + ' — coming soon';
           li.appendChild(b);
           var d = document.createElement('span');
-          d.textContent = p.desc;
+          d.textContent = p.d;
           li.appendChild(d);
           results.appendChild(li);
         });
         results.hidden = false;
-      });
-      var btn = document.getElementById('searchBtn');
-      if (btn) {
-        btn.addEventListener('click', function () { input.dispatchEvent(new Event('input')); });
       }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        runSearch();
+      });
+      input.addEventListener('input', runSearch);
     })();
   </script>
 </Layout>
