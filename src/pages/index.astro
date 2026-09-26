@@ -117,13 +117,13 @@ const searchIndex = [
   { slug: 'story', t: 'Story', d: 'Story across three eras — New Game+, endings and play time' },
   { slug: 'platforms', t: 'Platforms', d: 'Switch, Switch 2 and Steam platforms, plus the PS5 status' },
   { slug: 'dlc', t: 'DLC', d: 'Season Pass, character packs, prices and the 2026 schedule' },
+  { slug: 'codes', t: 'Codes', d: 'Early Bird serial codes, redemption and restrictions' },
+  { slug: 'tier-list', t: 'Tier List', d: 'Tier list status, character roles and party building' },
+  { slug: 'release-date', t: 'Release Date', d: 'Release date, price tiers and pre-order details' },
+  { slug: 'demo', t: 'Demo', d: 'Demo coverage, platforms and save transfer' },
+  { slug: 'editions', t: 'Editions', d: 'Physical & collector’s editions, contents and prices' },
 ];
 const comingSoon = [
-  { slug: 'codes', t: 'Codes', d: 'Active redeem codes' },
-  { slug: 'tier-list', t: 'Tier List', d: 'Best character rankings' },
-  { slug: 'release-date', t: 'Release Date', d: 'Release date, price and pre-order' },
-  { slug: 'demo', t: 'Demo', d: 'Demo guide and details' },
-  { slug: 'editions', t: 'Editions', d: 'Physical & collector’s editions' },
   { slug: 'review', t: 'Review', d: 'Review and gameplay analysis' },
   { slug: 'vs-another-eden', t: 'Vs Another Eden', d: 'Differences between the two games' },
   { slug: 'gacha', t: 'Gacha', d: 'Gacha system guide' },
@@ -185,7 +185,7 @@ const faqLd = {
           <button type="submit" id="searchBtn">Search</button>
         </div>
         <div class="search-hint">Try “demo”, “ps5”, “tier list”, “DLC” or a character name — pages still in the rollout are shown as coming soon. No matches open a Google site search.</div>
-        <p class="search-note">No account needed — search above, open any entry point, and jump straight to the section you need. Pages for codes, tier lists, releases, reviews and more are on the way.</p>
+        <p class="search-note">No account needed — search above, open any entry point, and jump straight to the section you need. Pages for reviews, comparisons, gacha and more are still on the way.</p>
         <ul class="search-results" id="searchResults" hidden></ul>
       </form>
       <script type="application/json" id="searchIndex" set:html={JSON.stringify(searchIndex)} />

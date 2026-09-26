@@ -573,4 +573,514 @@ export const pages: PageData[] = [
       },
     ],
   },
+  {
+    slug: 'codes',
+    title: 'Another Eden Begins Codes',
+    seoTitle: 'Another Eden Begins Codes | Redeem Codes',
+    seoDescription:
+      'Another Eden Begins codes guide: the Early Bird Bonus serial codes, how to claim them on Steam and Switch, platform restrictions and redemption steps.',
+    description:
+      'The current state of Another Eden Begins codes — early purchase serial codes, how to redeem them and what is actually available.',
+    category: 'Codes',
+    updated: 'Sep 25, 2026',
+    sections: [
+      {
+        h: 'Active Codes',
+        text:
+          'As of September 25, 2026, there are no publicly confirmed in-game redeem codes for Another Eden Begins itself. Begins is a buy-to-play single-player game with no gacha and no in-game currency shop, so there is no ongoing code economy to track the way mobile games do. To be explicit: no active codes have been confirmed yet. This page will be updated the moment official sources release any — and it will never publish invented codes, because a fake code wastes a player’s time. The codes that do exist for this game are the Early Bird Bonus serial codes for the mobile game Another Eden, explained below.',
+      },
+      {
+        h: 'Early Bird Bonus Serial Codes',
+        text:
+          'The codes bundled with Another Eden Begins are serial codes for the mobile game Another Eden: The Cat Beyond Time and Space, included as an Early Bird Bonus with every version. Three codes are bundled with the bonus:',
+        list: [
+          'Skip Part 1 code — lets new mobile players skip the first arc and continue from where Begins ends; one use per account, valid 2026/9/16 – 2027/9/16 (UTC).',
+          'Encounter Ramiu ticket — guarantees the 5★ character Ramiu, plus Begins outfits for Aldo and Feinne in the mobile game; valid until 2027/9/16.',
+          '5-Star Guaranteed 10 Allies Bundle — three 10-pull tickets, each with a guaranteed 5★ on the tenth pull; valid until 2027/3/15.',
+          'These codes are tied to the purchase of Begins and are separate from the mobile game’s own periodic anniversary and event codes.',
+        ],
+      },
+      {
+        h: 'How to Redeem Your Serial Codes',
+        text: 'Where and how each version lets you claim the serial codes:',
+        list: [
+          'Steam: buy the game, play for at least 2 hours, then use the “Claim Serial Code” button on the official site (anothereden.games) and sign in with your Steam account.',
+          'Switch physical (Japanese editions): the serial code leaflet ships inside the box; codes redeem on the mobile game for Android/iOS only.',
+          'Switch and Switch 2 digital: no serial code is included with digital purchases.',
+          'Mobile redemption path: in-game Menu → Other → Serial Code → enter the code exactly as printed (codes are case-sensitive) → Confirm, then collect the rewards from the Present Box.',
+          'If the code does not work, double-check the region and platform rules below before contacting support.',
+        ],
+      },
+      {
+        h: 'Platform & Region Restrictions',
+        list: [
+          'Switch and Switch 2 digital versions do not include serial codes.',
+          'Switch physical serial codes are available only with the Japanese edition, and redeem only on the mobile Android/iOS versions — not on PC.',
+          'Steam codes work across all mobile platforms.',
+          'Each code is limited to one use per account.',
+          'Early Bird codes have fixed validity windows; expired codes cannot be claimed.',
+        ],
+      },
+      {
+        h: 'How the Early Bird Bonus Works',
+        text:
+          'The Early Bird Bonus is not a pre-order bonus — it is bundled with every purchase of Another Eden Begins, physical or digital, from launch onward. The catch is where the codes can be claimed. Steam buyers use the official Claim Serial Code portal (requiring the game owned and 2 hours of playtime); Japanese physical buyers find a serial code leaflet inside the box. Digital Nintendo buyers receive nothing, because Nintendo digital SKUs do not include the serial code at all. Validity runs from September 16, 2026 through September 16, 2027 for the Skip Part 1 code and Ramiu ticket, and through March 15, 2027 for the 10-pull bundle.',
+      },
+      {
+        h: 'Mobile Game Codes vs Begins',
+        text:
+          'Be careful with code lists you find online: most “Another Eden codes” articles refer to the mobile game Another Eden: The Cat Beyond Time and Space — codes such as ANOTHEREDEN9TH for its 9th anniversary, or seasonal codes like AESUMMER25 and AEWINTER25. Those are for a different game with a different redemption system. They cannot be redeemed inside Another Eden Begins, and Begins has no matching in-game code entry at all. These lists are also updated less often than they claim: some "active" codes in them expired months ago. Treat any site claiming “working codes for Another Eden Begins” with suspicion until an official source confirms them.',
+      },
+      {
+        h: 'Code Safety & Scams',
+        text:
+          'Because code pages attract traffic, they also attract fake offers. A few rules keep you safe:',
+        list: [
+          'Official codes only ever come from anothereden.games, the WFS news page or the official X account.',
+          'Any site asking you to enter your Steam password or log in with your account to “generate codes” is a phishing attempt.',
+          'There are no code generators for this game — the serial codes are printed and tied to a purchase.',
+          'If a code seems too good to be true, report the page rather than trying it.',
+        ],
+      },
+      {
+        h: 'What Codes Should You Expect Next?',
+        text:
+          'The mobile game historically releases short-window codes around anniversaries, download milestones and crossovers. Begins, as a self-contained single-player title, has no equivalent cadence — so we do not predict when or whether in-game codes will appear. Any official announcement would come from anothereden.games, the WFS news page, or the official X account. This page tracks those sources and will be updated within a day of any confirmation.',
+      },
+      {
+        h: 'Checking for New Codes',
+        list: [
+          'Official website: anothereden.games (EN/JP).',
+          'WFS news page: wfs.games — source for all official announcements.',
+          'Official X account: @StudioPrisma_EN.',
+          'Reddit community: r/AnotherEdenGlobal for community-driven updates.',
+        ],
+      },
+      {
+        h: 'Code FAQ',
+        list: [
+          'Are there any active codes for Another Eden Begins? — Not as of September 2026; the page updates when official sources confirm any.',
+          'What do the bundled codes actually do? — They unlock content in the mobile game Another Eden, not inside Begins.',
+          'I bought digitally on Switch — do I get codes? — No, serial codes are bundled only with physical Japanese editions and the Steam version.',
+          'How long are the codes valid? — Skip Part 1 and the Ramiu ticket until 2027/9/16; the 10-pull bundle until 2027/3/15.',
+          'Can I use a Switch code on Steam? — No; Switch physical codes work only on mobile Android/iOS.',
+          'Where do I claim my Steam codes? — The official site’s Claim Serial Code button, after 2 hours of playtime.',
+          'Are mobile game codes valid in Begins? — No — they are separate games with separate redemption systems.',
+          'Can I share a code with a friend? — Each code is limited to one use per account, so sharing invalidates it for everyone else.',
+          'What if my code expires? — Expired codes cannot be claimed; the validity windows are fixed at purchase.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'tier-list',
+    title: 'Another Eden Begins Tier List',
+    seoTitle: 'Another Eden Begins Tier List | Best Characters',
+    seoDescription:
+      'Another Eden Begins tier list status: no official ranking exists yet, how character roles replace tier lists, and where to watch for community rankings.',
+    description:
+      'The honest state of Another Eden Begins tier lists — why this game does not use S/A/B rankings, and how roles and party building replace them.',
+    category: 'Tier List',
+    updated: 'Sep 25, 2026',
+    sections: [
+      {
+        h: 'The Current State of Tier Lists',
+        text:
+          'As of September 25, 2026, there is no official Another Eden Begins tier list, and no established community tier list has formed yet either. The game launched on September 17, and reviewers and wiki editors are still mapping the roster. Search results that rank “Another Eden” characters are almost all for the mobile game Another Eden: The Cat Beyond Time and Space — a gacha game with 5★ rarities, style variants and a very different character pool — and they must not be applied to Begins. A tier list for one game does not transfer to the other.',
+      },
+      {
+        h: 'Why a Traditional Tier List Does Not Fit',
+        text:
+          'Begins is a buy-to-play game with no gacha and no rarity system: all 19 characters are fixed story companions, and there is no pulling that would create a power ladder. The developers’ own guidance is that team composition matters more than individual strength — Wright Flyer Studios states that picking parties with perfect synergy is the key to victory. Concretely:',
+        list: [
+          'No gacha, no 5★/4★/3★ rarity tiers — every character is earned through the story.',
+          'No official power ranking exists, and the developers have not published one.',
+          'The design centers on role synergy (attacker / support / healer) and element coverage rather than a single strongest unit.',
+          'Mobile tier lists rank gacha-exclusive styles (Alter, AS, ES) that simply do not exist in Begins.',
+        ],
+      },
+      {
+        h: 'How the Tier List Will Work Here',
+        text:
+          'When a community consensus does emerge, this page will present it with clear methodology: which content the ranking assumes (main story, Horrors, boss fights), which roles are compared, and the date of the ranking. Until then we do not publish a fabricated S/A/B table — an invented ranking would mislead players more than it helps. The honest interim answer is role-based guidance instead.',
+      },
+      {
+        h: 'Character Roles & Party Building',
+        text:
+          'What replaces a tier list in Begins is role-based team building. Practical starting points from the current roster:',
+        list: [
+          'Attackers: Aldo (fire sword), Amy (wind fists), Suzette (wind spear, poison stacking), Cyrus (water sword arts), Gariyu (hellfire magic), Shion (katana), Shanie (water sword).',
+          'Support: Feinne (healing and shields), Mariel (healing priestess), Yuna (CP-charging mage), Riica (android that switches between battle and support modes).',
+          'Tanks and frontline: Anabel (paladin), Bertrand (royal spear).',
+          'Flexible: Riica doubles as offense-capable support; Yuna charges CP by healing then boosts water damage.',
+          'The core loop: build a Main Party plus up to 3 Another Parties, rotate for element coverage, and use Character Badges to share Chain Skills across same-weapon characters.',
+        ],
+      },
+      {
+        h: 'Party Building Examples',
+        text:
+          'A few starting formations that match the attacker/support/healer triangle. These are starting points, not rankings:',
+        list: [
+          'Aldo + Feinne + Cyrus — a fire/water frontline with solid healing, useful from the first chapters.',
+          'Suzette + Yuna + Mariel — poison stacking backed by two healer supports for long boss fights.',
+          'Amy + Riica + Anabel — wind damage, android flexibility and a tank for Horror farming.',
+          'Gariyu + Shanie + Bertrand — magic burst, water coverage and a royal spear wall.',
+          'Late-game: add Ramiu (New Game+) as a sand-spirit guide with her own progression path.',
+        ],
+      },
+      {
+        h: 'What Reviews Say About Balance',
+        text:
+          'Early reviews praise the roster’s distinctiveness rather than a single dominant unit: CGMagazine highlights how sharply each companion is characterized, and community playthrough notes describe Riica as a healer-support with strong offensive options and Suzette as a crit/poison specialist. Because every companion earns full EXP in Main and Another Parties, rotation — not ranking — is the practical path to strength. The practical takeaway for new players: almost any three-character party clears the story chapters, and the difficulty curve leaves room for experimentation without a “wrong” roster.',
+      },
+      {
+        h: 'How to Build Your Own Party',
+        text:
+          'Until a community tier list exists, the practical way to use this page is to build around roles. A simple three-step method:',
+        list: [
+          'Pick one attacker, one support and one healer from the role lists above — most of the roster fits these three buckets cleanly.',
+          'Check element coverage: aim for at least two elements among fire, water, earth and wind so you can hit enemy weaknesses across eras.',
+          'Use Character Badges to borrow Chain Skills from same-weapon characters, filling the gaps your party is missing.',
+          'Keep the Main Party’s slots flexible: Valor commands let you swap in up to 3 Another Parties mid-battle, so a bench of leveled characters is a real advantage.',
+        ],
+      },
+      {
+        h: 'What a Consensus Tier List Would Look Like',
+        text:
+          'When the community settles on a ranking, it will most likely follow the conventions of other single-player JRPG communities: an S/A/B table split by content type — story, Horrors, boss fights and New Game+ — rather than one global ranking. Expect tiers to be argued over week one and stabilized by month two, with methodology notes attached. Until that exists, treat any “S-tier” claim about Another Eden Begins as opinion, not data — this page will only publish a tier list with its assumptions and update date stated.',
+      },
+      {
+        h: 'Where to Watch for New Rankings',
+        list: [
+          'RPG Site’s full character database for Another Eden Begins is currently the closest thing to a roster reference.',
+          'Community hubs: r/AnotherEdenGlobal on Reddit and the official X account @StudioPrisma_EN.',
+          'This page will add a real tier list section as soon as a consensus ranking exists, with methodology and dates attached.',
+        ],
+      },
+      {
+        h: 'Tier List FAQ',
+        list: [
+          'Is there an official tier list? — No, the developers have not published one.',
+          'Can I use the mobile game’s tier list? — No — those rankings cover gacha versions and characters not in Begins.',
+          'Who are the best characters? — There is no single best; teams built around attacker/support/healer roles and element coverage work best.',
+          'When will a real tier list appear? — Community rankings usually take a few weeks after launch; this page will track them.',
+          'Is Riica good? — Reviewers rate her as a strong healer-support with solid offensive options.',
+          'Does New Game+ change rankings? — Hard to say until a consensus list exists; NG+ adds content but not new roster strength systems.',
+          'Is the mobile tier list the same game? — No, it ranks gacha versions; the rosters barely overlap.',
+          'How is this tier list different from the mobile one? — This page ranks nothing yet and will publish only consensus data with dates.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'release-date',
+    title: 'Another Eden Begins Release Date',
+    seoTitle: 'Another Eden Begins Release Date, Price & Pre-Order',
+    seoDescription:
+      'Another Eden Begins release date (September 17, 2026), regional prices, pre-order details and where to buy the game.',
+    description:
+      'Release date, price tiers, pre-order details and buying options for Another Eden Begins across all platforms.',
+    category: 'Release Date',
+    updated: 'Sep 25, 2026',
+    sections: [
+      {
+        h: 'Release Date',
+        text:
+          'Another Eden Begins launched worldwide on September 17, 2026 (Thursday), a simultaneous global release across Nintendo Switch 2, Nintendo Switch and Steam. Steam’s store page displays September 16 because it uses US Pacific time — which is already September 17 in Asia — while Nintendo stores unlock by local timezone. The game was first revealed at the February 17, 2026 Nintendo Direct Partner Showcase with a “Summer 2026” window, and the exact date was locked in during the April 4, 2026 Anaden Matsuri livestream. The score is by Yasunori Mitsuda (main theme) with Procyon Studio, the scenario is directed by Masato Kato, and the game carries a CERO B (12+) rating with text in English, Japanese, Korean, Simplified Chinese and Traditional Chinese.',
+      },
+      {
+        h: 'Announcement Timeline',
+        list: [
+          'Feb 17, 2026 — first reveal at Nintendo Direct Partner Showcase; “Scheduled for Summer 2026”.',
+          'Apr 4, 2026 — Anaden Matsuri 2026 spring livestream confirms September 17 and opens Special Collection Box pre-orders.',
+          'Apr 9, 2026 — retail pre-orders open across Japan with store-specific bonuses.',
+          'Sep 2, 2026 — free demo launches on Switch and Steam.',
+          'Sep 16/17, 2026 — worldwide release (Steam shows Sep 16 in US time).',
+          'Sep 17, 2026 — DLC Vol.1 and Vol.2 available at launch; TGS 2026 playable build at the Happinet booth.',
+        ],
+      },
+      {
+        h: 'Price',
+        text: 'Official pricing, verified across regions (base game). All Japanese prices include tax:',
+        list: [
+          'Japan: Switch / Steam standard 4,980 yen; Switch 2 Edition 5,480 yen (tax included).',
+          'Hong Kong: Switch HKD 249; Switch 2 Edition HKD 274.',
+          'Steam China: ¥128 for the base game; all DLC bundled comes to ~¥158.',
+          'US: $39.99 · Singapore: S$37.99 · Russia: 1,550 RUB (a regional quirk where the Season Pass costs more than the base game).',
+          'DLC: character packs $9.99 / 1,000 yen / ~¥25 CN each; Season Pass $44.99 / 4,500 yen / ~¥108 CN.',
+          'For context, $39.99 places Begins in the standard buy-to-play JRPG band — reviewers compared its 26-chapter content against that price favorably.',
+        ],
+      },
+      {
+        h: 'Global Launch Facts',
+        list: [
+          'Developer and publisher: Wright Flyer Studios (STUDIO PRISMA), worldwide simultaneous release.',
+          'Genre: time-traveling RPG; fully voiced main story; 26 chapters across three eras.',
+          'Launch DLC: Character Packs Vol.1 and Vol.2 available on day one; the full Season Pass covers Vol.1–5 through December 2026.',
+          'Free demo: live since September 2, 2026, with save transfer into the full game (see the Demo page).',
+          'Tokyo Game Show 2026: playable build at the Happinet booth (Hall 6, N04) with a Cyrus face visor giveaway.',
+          'The base game is a standalone reconstruction of the mobile original’s first arc — no subscription and no gacha.',
+        ],
+      },
+      {
+        h: 'Pre-Order',
+        text:
+          'Pre-orders opened on April 4, 2026 for the WRIGHT FLYER STORE-exclusive Special Collection Box, and on April 9, 2026 at retail stores across Japan. Steam did not run a physical pre-order, but Steam buyers still qualify for the Early Bird serial codes via the Claim Serial Code page on the official site. Japanese retailers added exclusive bonuses — Animate (B2 cloth), Amazon (original postcards), Ebten (Fami通 DX pack), Yodobashi (holographic stickers) and more — while quantities were limited and sold out at several stores.',
+      },
+      {
+        h: 'Early Bird Bonus',
+        text:
+          'Every version includes mobile-game serial codes as an Early Bird Bonus — a Skip Part 1 code, an Encounter Ramiu ticket plus Aldo and Feinne outfits, and three 5★-guaranteed 10-pull tickets. Full redemption rules, platform restrictions and validity windows are covered on the Codes page. Two things to know before you buy: the codes are redeemable in the mobile game Another Eden (not inside Begins), and digital Nintendo purchases do not include them at all — the Steam version and Japanese physical copies are the ones that carry the codes.',
+      },
+      {
+        h: 'Editions at Launch',
+        text:
+          'The release lineup includes standard digital editions on all three platforms, standard physical editions on Nintendo platforms in Japan, and two collector boxes — the Collection Box and the WFS STORE-exclusive Special Collection Box. A western physical edition from Aksys Games arrives in 2027. Edition contents and prices are detailed on the Editions page.',
+      },
+      {
+        h: 'Where to Buy',
+        text:
+          'Every official storefront is linked from the game’s website (anothereden.games), which also hosts the serial code claim portal. The purchase routes:',
+        list: [
+          'Digital: Nintendo eShop (Switch / Switch 2) and Steam (PC).',
+          'Physical (Japan): standard editions and Collection Boxes, published by Wright Flyer Studios, available from September 17, 2026.',
+          'Physical (West): Aksys Games release in 2027 on Switch / Switch 2 — physical only, price TBA.',
+          'The official site (anothereden.games) links each storefront and hosts the serial code claim portal.',
+        ],
+      },
+      {
+        h: 'Price Changes & Deals',
+        text:
+          'As of September 25, 2026, no official discount or sale has been announced for the base game — it launched at full price on every platform. The DLC Season Pass is the only standing bundle discount (¥108 CN / 4,500 yen vs. buying five packs individually). For future deals, the reliable channels are the Steam store page (wishlist and sale notifications) and the WFS news page; we do not speculate about when the first discount will appear.',
+      },
+      {
+        h: 'Official Channels for Release News',
+        list: [
+          'Official website: anothereden.games — product page, store links and the serial code claim portal.',
+          'WFS news page: wfs.games — the source for all official announcements, patches and events.',
+          'Official X account: @StudioPrisma_EN.',
+          'Steam store page: app/4163960 — wishlist, demo and DLC listings.',
+          'Tokyo Game Show 2026: playable build at the Happinet booth (Hall 6, N04).',
+        ],
+      },
+      {
+        h: 'Release Information FAQ',
+        list: [
+          'What is the release date? — September 17, 2026 worldwide; Steam shows September 16 in US time.',
+          'Is it on PS5? — No announcement yet; see the Platforms page for the current status.',
+          'Was there a demo before launch? — Yes, from September 2, 2026; see the Demo page.',
+          'Does pre-ordering give bonuses? — Early Bird serial codes come with every version; Steam had no physical pre-order.',
+          'When is the western physical edition? — 2027 via Aksys Games.',
+          'What is the CERO rating? — B (ages 12+).',
+          'How much does the game cost? — From ¥128 CN / $39.99 / 4,980 yen depending on region and edition.',
+          'Which region released first? — The launch was simultaneous; Steam unlocked hours earlier because of timezones.',
+          'Is the game a limited-time title? — No — it is a permanent buy-to-play release with no subscription.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'demo',
+    title: 'Another Eden Begins Demo',
+    seoTitle: 'Another Eden Begins Demo | Demo Guide & Details',
+    seoDescription:
+      'Another Eden Begins demo guide: what the free demo covers, platforms, save transfer rules and how to carry progress into the full game.',
+    description:
+      'Everything about the Another Eden Begins demo — coverage, platforms, save transfer and how it leads into the full game.',
+    category: 'Demo',
+    updated: 'Sep 25, 2026',
+    sections: [
+      {
+        h: 'Is There a Demo?',
+        text:
+          'Yes. A free demo went live on September 2, 2026 (23:00 Beijing time) on Nintendo Switch and Steam, and it does not require a pre-order or any code. The official Final Trailer launched at the same time to mark the occasion. The demo plays the opening chapters of the main story exactly as they appear in the full game, so it is an honest preview of the pacing, combat and story tone — recorded playthroughs confirm the covered chapters are identical to the release build. In practical terms, it is a try-before-you-buy window: roughly six chapters of story, which is far more generous than most JRPG demos.',
+      },
+      {
+        h: 'How to Play the Demo',
+        list: [
+          'Steam: open the game’s store page and click the “Download Demo” button next to the purchase and wishlist options.',
+          'Switch: download from the Nintendo eShop page for Another Eden Begins.',
+          'No pre-order or code is required — the demo is open to everyone.',
+          'Progress and character stats created in the demo carry into the full version on the same platform.',
+          'Both versions unlock the demo the same way as the full game — no extra account or launcher steps.',
+        ],
+      },
+      {
+        h: 'Demo Platforms',
+        text:
+          'The demo is available on Nintendo Switch and Steam. There is no native Nintendo Switch 2 demo — because Begins is a cross-gen title, the Switch demo also runs on Switch 2, and its save can be used by the Switch 2 Edition of the full game. That makes the demo effectively playable on every release platform through one of the two available versions. On Steam the store page lists a dedicated “Download Demo” button next to the purchase and wishlist options, so finding it takes no extra steps.',
+      },
+      {
+        h: 'Demo Content',
+        text:
+          'The demo covers the main story from the prologue through Chapter 6, “Salamander Encroached Upon from Another World” — roughly the first quarter of the 26-chapter story. The opening hour alone walks through Baruoki life: training with Darunis, asking Ashtear about prisma, exploring the Nuaru Uplands for a Coconerica Branch, clearing the village cave Horror, and finding Varuo the cat — before the Beast King fight pulls Aldo into the future era of Elzion. From there the demo continues through the Route 99 and Industrial Ruins chapters, including the Galliard boss fight and the recruitment of Riica and Amy. That spans two eras and introduces the core loop — exploration, Horror battles and the first Another Force battles — so by the end you have met a third of the playable roster and tried every major system the full game builds on.',
+      },
+      {
+        h: 'Demo Progress & Save Transfer',
+        text:
+          'Saves transfer on the same platform; the rules matter most for PC and handheld users:',
+        list: [
+          'Switch demo saves continue in the full Switch version, and they work with the Switch 2 Edition of the full game.',
+          'Cross-platform transfer (Switch → Steam) is not supported.',
+          'Steam Deck users must transfer manually: disable Steam Cloud for the game (Properties → General), move the save folder from the demo to the full game directory, then re-enable cloud saves.',
+          'After transfer, the full game continues from Chapter 7, “Acteul: A Shadow Across the Water”.',
+          'Demo saves made before the full release transfer exactly the same way after launch.',
+        ],
+      },
+      {
+        h: 'What Comes After the Demo',
+        text:
+          'The full game launched on September 17, 2026 with 26 chapters, New Game+ and more than 10 endings. Carrying a demo save means starting the full game at Chapter 7 with your party and character stats intact — no need to replay the opening. The demo is the recommended first step for anyone unsure about the pacing or the story-heavy JRPG format, since the covered content is identical to the retail build. Progress earned in the demo also counts toward achievements and trophies when you continue in the full game, so nothing from those first six chapters is wasted.',
+      },
+      {
+        h: 'Demo Impressions',
+        text:
+          'Community impressions of the demo have been consistent with the reviews: handheld footage on Switch OLED shows stable performance, Steam Deck playthroughs report no major issues, and players highlight the 360-degree free movement and the fully voiced opening chapters as the biggest improvements over the mobile original. The demo’s Chapter 1 story content matches the recorded full-release walkthroughs shot-for-shot.',
+      },
+      {
+        h: 'Tips Before You Play',
+        list: [
+          'The demo save is separate from the full game’s — decide on your platform before starting, because cross-platform transfer is not supported.',
+          'All five languages (EN / JA / KO / Simplified CN / Traditional CN) are available in the demo, matching the full game.',
+          'On Steam Deck, plan for the manual save transfer steps before starting a long session.',
+          'The opening chapters are story-heavy and fully voiced — expect a slower, more narrative first hour than an action RPG.',
+          'Horror enemies in the demo drop unique badges; fighting them early is worth it even in trial content.',
+        ],
+      },
+      {
+        h: 'Demo Version & Updates',
+        text:
+          'The demo runs within the same specification envelope as the full game: on Switch it takes about 3.6 GB of storage, and on Steam the store page lists the system requirements that apply to both the demo and the release build. As of September 2026 the demo has not received separate content updates — the covered chapters match the retail version, and the save transfer rules have stayed unchanged since the September 2 launch.',
+      },
+      {
+        h: 'Demo FAQ',
+        list: [
+          'How many chapters is the demo? — Six chapters (prologue through Chapter 6).',
+          'Does my demo progress carry over? — Yes, on the same platform; see the transfer rules above.',
+          'Is there a Switch 2 demo? — No native demo; the Switch demo runs on Switch 2.',
+          'Do I need to pre-order to play it? — No, it is open to everyone.',
+          'Is the demo different from the full game? — The covered chapters are identical.',
+          'When did it launch? — September 2, 2026.',
+          'Can I transfer a demo save to Steam from Switch? — No, cross-platform transfer is not supported.',
+          'Does the demo include DLC characters? — No, DLC content is part of the full game only.',
+          'Is the demo still available after launch? — Yes, it remains on the Switch eShop and Steam store.',
+          'How big is the demo? — About 3.6 GB on Switch, matching the full game’s install footprint.',
+          'Can I play the demo in other languages? — Yes, all five supported languages are available.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'editions',
+    title: 'Another Eden Begins Editions',
+    seoTitle: 'Another Eden Begins Editions | Physical & Collector’s',
+    seoDescription:
+      'Another Eden Begins editions guide: the standard versions, Collection Box, Special Collection Box, what is included and where to buy.',
+    description:
+      'Every Another Eden Begins edition — digital, physical, Collection Box and the WFS Special Collection Box — with contents and prices.',
+    category: 'Editions',
+    updated: 'Sep 25, 2026',
+    sections: [
+      {
+        h: 'Editions Overview',
+        text:
+          'Another Eden Begins launched with a clear edition ladder: standard digital on all platforms, standard physical on Nintendo platforms, and two collector boxes in Japan. A western physical edition follows in 2027. All editions run the same 26-chapter game — the differences are extras, price and platform. The lineup at a glance:',
+        list: [
+          'Standard Digital — Switch / Switch 2 / Steam · 4,980–5,480 yen · no serial code.',
+          'Standard Physical — Switch / Switch 2 (Japan, WFS) · same price as digital · Early Bird serial codes included.',
+          'Collection Box — Switch 9,980 yen / Switch 2 Edition 10,480 yen · OST + SteelBook + slipcase + codes.',
+          'Special Collection Box — WRIGHT FLYER STORE exclusive · adds paper knife, metal pins and booklet.',
+          'Western Physical — Switch / Switch 2 · 2027 via Aksys Games · details TBA.',
+        ],
+      },
+      {
+        h: 'Physical Edition',
+        text:
+          'In Japan, physical editions launched September 17, 2026 alongside the digital release, published by Wright Flyer Studios. Physical versions are the ones that bundle the mobile-game serial code leaflet (Skip Part 1, Ramiu ticket, 10-pull tickets) — digital downloads do not include it. Retail listings (for example CDJapan, where the Collection Box carries the WFS-1 catalog number and is marked region-free and first-press limited) show the Japanese Switch release as region-free. The western physical release from Aksys Games was announced at Anime Expo 2026 and is set for 2027 on Switch and Switch 2: physical only, with no specific month or price announced yet, and an ESRB rating still pending.',
+      },
+      {
+        h: 'Where to Buy Physical Copies',
+        list: [
+          'Japan: retail stores (Yodobashi, Bic Camera, Gamers and others) and the WRIGHT FLYER STORE for the Special Collection Box.',
+          'Online Japanese stores: CDJapan and Amazon Japan carry the Collection Box; overseas buyers can import it.',
+          'Western shoppers: Play-Asia and Amazon Japan are the typical import routes until the 2027 western release.',
+          'The official site (anothereden.games/store) lists the Japanese lineup and links each store.',
+        ],
+      },
+      {
+        h: 'Collector’s Edition',
+        text: 'The Collection Box is the collector edition in Japan, in two variants:',
+        list: [
+          'Collection Box (Switch) — 9,980 yen: game, Original Soundtrack CD, SteelBook, three-sided slipcase box and the Early Bird serial code leaflet.',
+          'Collection Box (Switch 2 Edition) — 10,480 yen: the same contents for the Switch 2 edition.',
+          'Special Collection Box — WRIGHT FLYER STORE-exclusive limited edition: everything above plus an Ogre Rancorem paper knife, three metal pins (ancient / present / future) and a Special Booklet with developer interviews.',
+          'The boxes are first-print limited; the serial code bonus was time-limited, so second-hand copies may lack it.',
+        ],
+      },
+      {
+        h: 'What’s Included',
+        text: 'Comparing what every edition actually ships with:',
+        list: [
+          'Digital: game only — no serial code, no physical extras.',
+          'Standard physical: game card + serial code leaflet.',
+          'Collection Box: standard physical + Original Soundtrack CD + SteelBook + slipcase box.',
+          'Special Collection Box: Collection Box + paper knife + three pins + Special Booklet.',
+          'No edition ships with DLC content — Character Packs are purchased separately on all platforms.',
+        ],
+      },
+      {
+        h: 'Edition Differences',
+        list: [
+          'Digital vs physical: only physical (Japan) and the Steam version include the mobile serial codes.',
+          'Switch vs Switch 2 Edition: separate SKUs with different prices; the Switch 2 Edition runs only on Switch 2 hardware.',
+          'Japan vs West: Japanese physical editions shipped at launch; the western release is 2027.',
+          'Retail bonuses: Japanese stores added exclusive pre-order bonuses, listed below.',
+          'PC: no physical edition exists for Steam — digital only.',
+          'Same-game content: every edition runs the same 26-chapter game; editions differ only in extras, prices and platform.',
+          'Early Bird Bonus: bundled with every edition, but only claimable where serial codes are included (Steam and Japanese physical).',
+        ],
+      },
+      {
+        h: 'Store-Specific Pre-Order Bonuses',
+        text: 'Japanese retailers offered exclusive bonuses during the pre-order window (limited stock):',
+        list: [
+          'Animate — B2 multi-purpose cloth.',
+          'Amazon.co.jp — original postcard set (12 cards) plus an original character frame overlay.',
+          'Ebten (Fami通 DX Pack) — acrylic plate, 7-character badge set and two Aldo & Feinne acrylic stands; or a 3D crystal set with an Aldo laser-etched crystal and LED base.',
+          'Yodobashi — holographic stickers · Yamada Denki — metal card · Melonbooks — acrylic card.',
+          'Gamers — original acrylic figure (Collection Box purchasers only).',
+        ],
+      },
+      {
+        h: 'Which Edition Should You Buy?',
+        text:
+          'The practical advice depends on what you value. The standard digital edition is the cheapest route and carries no physical extras, but it also omits the serial codes — those come only with physical Japanese copies and the Steam version. The Collection Box is the best value for collectors who want the soundtrack and SteelBook. The Special Collection Box is only worth hunting for if you collect WFS store exclusives. And if you are outside Japan, the western physical edition in 2027 is the one to wait for — otherwise the digital version is the straightforward choice. In short: digital for price, Japanese physical for the codes, Collection Box for the extras, and patience for the 2027 western box.',
+      },
+      {
+        h: 'Price & Availability',
+        list: [
+          'Digital: 4,980 yen (Switch / Steam) · 5,480 yen (Switch 2 Edition).',
+          'Collection Box: 9,980 yen (Switch) · 10,480 yen (Switch 2 Edition).',
+          'Special Collection Box: WRIGHT FLYER STORE exclusive, limited stock.',
+          'Western physical: 2027, price TBA.',
+          'Resale: first-print serial codes are time-limited — check before buying used copies.',
+          'Store stock varies: Japanese retailers sold out some first-print boxes within days; check current listings before relying on a fixed store.',
+        ],
+      },
+      {
+        h: 'Editions FAQ',
+        list: [
+          'Is there a PC physical edition? — No, physical editions are Nintendo-only.',
+          'What is in the Collection Box? — OST CD, SteelBook, slipcase box and the serial code leaflet.',
+          'Do digital versions include serial codes? — No.',
+          'When is the western edition? — 2027, announced at Anime Expo 2026.',
+          'Are collector boxes still available? — They were first-print limited; check current stock at Japanese stores.',
+          'Is the Collection Box region-free? — The Japanese Switch version is region-free per retail listings.',
+          'Does the Special Collection Box exist outside Japan? — No, it is a WRIGHT FLYER STORE exclusive.',
+          'Is there an art book in any edition? — The Special Collection Box includes a Special Booklet with developer interviews; no standalone art book has been announced.',
+          'Can I still get the serial codes if I buy used? — Only if the original leaflet is included; first-print codes were time-limited.',
+        ],
+      },
+    ],
+  },
 ];
