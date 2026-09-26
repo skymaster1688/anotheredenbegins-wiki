@@ -105,7 +105,7 @@ export const pages: PageData[] = [
         ],
       },
       {
-        h: 'Common Questions',
+        h: 'Another Eden Begins Guide FAQ',
         list: [
           'How many chapters are there? — The main story runs 26 chapters.',
           'Is the game single-player? — Yes, it is fully single-player.',
@@ -130,7 +130,7 @@ export const pages: PageData[] = [
     updated: 'Sep 17, 2026',
     sections: [
       {
-        h: 'Character List',
+        h: 'Another Eden Begins Character List',
         text:
           'The roster spans 19 playable characters in total — 18 companions met during the main story plus Ramiu, who joins as a guide in New Game+. In recruitment order: Aldo (sword, fire), Feinne (staff), Riica (battle/support android), Amy (fists, wind), Yuna (purification), Cyrus (Enku Jizai swordsman), Suzette (spear, wind), Melina (hammer), Mariel (healing), Anabel (paladin), Cetie (spear), Renri (execution), Helena (demolition), Shion (katana), Bertrand (royal spear), Gariyu (hellfire), Shanie (water sword), Myrus (beast), and Ramiu (planet blessing, New Game+ guide). Every companion has a distinct weapon, element and party role, so the roster supports a wide range of team compositions.',
       },
@@ -211,13 +211,15 @@ export const pages: PageData[] = [
         ],
       },
       {
-        h: 'Frequently Asked Questions',
+        h: 'Another Eden Begins Characters FAQ',
         list: [
           'How many playable characters are there? — 19, including the New Game+ guide Ramiu.',
+          'Are all characters free? — Yes, all 19 base characters are earned through story and quests; the gacha systems were removed.',
           'Can DLC add more characters? — Yes, five character packs add 10 more; see the DLC page.',
           'Do DLC characters have English voice acting? — Their quests currently do not.',
           'Is the main story fully voiced? — Yes, the main storyline is fully voiced.',
           'Can I swap characters mid-battle? — Yes, Valor commands swap in up to 3 prepared Another Parties.',
+          'Who is the best character? — There is no single best; teams depend on element coverage, role balance and your play style.',
         ],
       },
     ],
@@ -234,7 +236,7 @@ export const pages: PageData[] = [
     updated: 'Sep 17, 2026',
     sections: [
       {
-        h: 'Story Overview',
+        h: 'Another Eden Begins Story Overview',
         text:
           'Aldo and his sister Feinne were adopted by the village chief of Baruoki as infants and raised together for 16 years. The opening chapter follows their quiet life: Aldo trains with Darunis, asks Ashtear about prisma, explores the Nuaru Uplands for a Coconerica Branch, searches for the cat Varuo, and helps the village. When the self-proclaimed Beast King seizes Feinne for her hidden power, Aldo chases him into the Moonlight Forest — and during the fight he is pulled into a spacetime rift that opens onto a world 800 years in the future. From there the story expands across three eras, and the search for Feinne becomes a journey through the history of the world itself.',
       },
@@ -319,7 +321,7 @@ export const pages: PageData[] = [
           'Playtime estimates vary depending on how much you explore. Reviewers and community reports put a story-focused run at roughly 30-50 hours: most first playthroughs land around 30-40 hours, dedicated completionists who clear side stories and quests report 50+ hours, and players chasing all 10+ endings, every memory prism, all 56 cats and the full 28 Steam achievements report well over 100 hours. The free demo covers the first six chapters, and its save carries into the full release — a good way to gauge whether the pacing suits you before buying.',
       },
       {
-        h: 'Story FAQ',
+        h: 'Another Eden Begins Story FAQ',
         list: [
           'Is Another Eden Begins a remake? — It is a standalone reconstruction of the first arc of Another Eden: The Cat Beyond Time and Space.',
           'How many endings are there? — More than 10, reached through New Game+ choices.',
@@ -353,14 +355,14 @@ export const pages: PageData[] = [
     updated: 'Sep 23, 2026',
     sections: [
       {
-        h: 'Nintendo Switch',
+        h: 'Another Eden Begins on Nintendo Switch',
         text:
           'Another Eden Begins launched on Nintendo Switch worldwide on September 16, 2026, alongside the Switch 2 edition. The standard digital edition is priced at 4,980 yen (tax included) in Japan and 46,800 KRW on the Korean Nintendo Store; the Switch 2 Edition is priced higher at 5,480 yen. The game runs on Switch, Switch OLED and Switch Lite, supports the Switch Pro Controller, and takes about 3.6 GB of storage. The Korean store page lists Korean/English/Japanese/Chinese language support and single-player play. Physical buyers have two options: the Japanese retail edition published by Wright Flyer Studios launched September 17, 2026, and a western physical release from Aksys Games arrives in 2027.',
       },
       {
         h: 'Buying Notes',
         text:
-          'Digital versions are the fastest route at launch. For platform-specific buying decisions:',
+          'Digital versions are the fastest route at launch. These buying notes for Another Eden Begins Platforms cover the platform-specific decisions:',
         list: [
           'Japanese physical editions — standard Switch Collection Box (9,980 yen) and Switch 2 Edition Collection Box (10,480 yen) — launched September 17, 2026.',
           'The western physical release by Aksys Games follows in 2027.',
@@ -438,7 +440,7 @@ export const pages: PageData[] = [
         ],
       },
       {
-        h: 'FAQ',
+        h: 'Another Eden Begins Platforms FAQ',
         list: [
           'Is Another Eden Begins on PS5? — Not announced as of September 2026.',
           'Is it on Xbox? — No announcement.',
@@ -463,7 +465,7 @@ export const pages: PageData[] = [
     updated: 'Sep 23, 2026',
     sections: [
       {
-        h: 'DLC Overview',
+        h: 'Another Eden Begins DLC Overview',
         text:
           'Another Eden Begins launched with a DLC Season Pass covering five character packs (Vol.1–5). Vol.1 and Vol.2 went live alongside the game on September 16, 2026, per the official WFS news post; Vol.3–5 are planned through the rest of 2026. Each pack adds 2 playable characters with their own quests — 10 additional characters in total beyond the 19 in the base roster. The DLC characters are returning characters from the mobile game Another Eden; so far none of them has a dedicated official trailer of its own. The Season Pass bundles all five packs at a discount, while each pack can also be bought individually. Players who want the complete roster can treat the Season Pass as part of the launch purchase — the two day-one packs extend the party immediately, and the remaining three arrive through the rest of 2026 on the official schedule.',
       },
@@ -558,7 +560,7 @@ export const pages: PageData[] = [
         ],
       },
       {
-        h: 'DLC FAQ',
+        h: 'Another Eden Begins DLC FAQ',
         list: [
           'Do I need the base game? — Yes, the base game is sold separately.',
           'Are DLC quests voiced in English? — DLC characters’ Encounter/Character/Kinship quests do not currently have English voices.',
