@@ -1123,7 +1123,7 @@ export const pages: PageData[] = [
       {
         h: 'What Critics Criticize',
         text:
-          'The criticisms are equally consistent across outlets: one Fami通 editor found dialogue and transitions overlong; Video Chums points at repetitive dungeon layouts and unskippable cutscenes; GameOver.gr calls out heavy backtracking, plain battles and a lack of challenge; Noisy Pixel argues the game plays it too safe despite its pedigree. On difficulty, most reviewers agree the combat leans easy, and the mobile-game origins show in map design — dead ends and weak signposting appear in several reviews.',
+          'The criticisms are equally consistent across outlets: one Fami通 editor found dialogue and transitions overlong; Video Chums points at repetitive dungeon layouts and unskippable cutscenes; GameOver.gr calls out heavy backtracking, plain battles and a lack of challenge; Noisy Pixel argues the game plays it too safe despite its pedigree. On difficulty, most reviewers agree the combat leans easy, and the mobile-game origins show in map design — dead ends and weak signposting appear in several reviews. The pattern reads like a checklist of classic JRPG pacing complaints: long mid-game stretches, light guidance, and a difficulty curve that rewards grinding more than planning. None of these are dealbreakers for the audience the game targets — retro RPG fans are used to forgiving battles and dense story — but they explain why the score spread runs from 5/10 to 8.5/10 rather than clustering at the top.',
       },
       {
         h: 'Fami通 Review (32/40)',
