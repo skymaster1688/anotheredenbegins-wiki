@@ -1083,4 +1083,442 @@ export const pages: PageData[] = [
       },
     ],
   },
+  {
+    slug: 'review',
+    title: 'Another Eden Begins Review',
+    seoTitle: 'Another Eden Begins Review | Scores & Verdict',
+    seoDescription:
+      'Another Eden Begins review: critic scores, Fami通 32/40, Steam user reviews, pros and cons, and who the game is for.',
+    description:
+      'A consolidated Another Eden Begins review: critic scores, Fami通 and Steam verdicts, what reviewers praise and criticize, and who should buy it.',
+    category: 'Review',
+    updated: 'Sep 27, 2026',
+    sections: [
+      {
+        h: 'Another Eden Begins Review Overview',
+        text:
+          'Another Eden Begins launched on September 16/17, 2026 to a notably warm critical reception for a niche JRPG: Metacritic and OpenCritic both sit at 75 (sample still accumulating), Fami通 gave it 32/40 — tying with Mortal Shell 2 for the top score of its week — and Steam users hold it at 72% positive ("Mostly Positive") across 120 reviews. It carries an ESRB Teen rating, downloads at about 11.1 GB, and supports TV, tabletop and handheld play on Switch. The consensus reads like a throwback: strong scenario and music, no gacha, and a Chrono Trigger pedigree — with caveats about pacing, dungeon design and difficulty.',
+      },
+      {
+        h: 'Critic Scores at a Glance',
+        text: 'A cross-checked summary of published scores at launch:',
+        list: [
+          'Metacritic / OpenCritic — 75 / 75 (aggregates, still accumulating).',
+          'Fami通 — 32/40 (8/8/8/8), tied for the week’s top score in Japan (Sep 12, 2026).',
+          'CGMagazine — 8.5/10 (PC): "a complete RPG with the gacha stripped out".',
+          'Checkpoint — 8/10 (PC).',
+          'Tech-Gaming — 73% overall; Storytelling rated 80%.',
+          'Video Chums — 6.7/10: criticizes repetitive dungeons and unskippable cutscenes.',
+          'Gamesurf — 6.5/10 (Switch 2): praise and criticism in roughly equal measure.',
+          'GameOver.gr — 5/10: criticizes heavy backtracking, plain battles and low challenge.',
+          'Noisy Pixel — mixed: "plays it too safe" despite clear Chrono Trigger DNA.',
+          'Slant Magazine — a "soulful JRPG throwback" from scenario director Masato Kato.',
+        ],
+      },
+      {
+        h: 'What Critics Praise',
+        text:
+          'The most-praised element across every major review is the Chain Skill system — skills chain automatically when conditions are met, which reviewers describe as tactical and satisfying. Character design, presentation, music and story pacing are also consistently highlighted: Fami通’s four editors praised the Chain Skills, character work, visuals, soundtrack and story rhythm; CGMagazine emphasizes how sharply each companion is characterized; Slant Magazine frames the whole package as a scrappy, soulful JRPG throwback. The removal of gacha is treated as a feature everywhere — reviewers repeatedly note the buy-to-play pricing feels fair against the amount of content. The verdict pattern is telling: outlets that went in expecting a polished, story-first retro JRPG came out positive, while outlets measuring it against modern AAA scope were the ones that hesitated.',
+      },
+      {
+        h: 'What Critics Criticize',
+        text:
+          'The criticisms are equally consistent across outlets: one Fami通 editor found dialogue and transitions overlong; Video Chums points at repetitive dungeon layouts and unskippable cutscenes; GameOver.gr calls out heavy backtracking, plain battles and a lack of challenge; Noisy Pixel argues the game plays it too safe despite its pedigree. On difficulty, most reviewers agree the combat leans easy, and the mobile-game origins show in map design — dead ends and weak signposting appear in several reviews.',
+      },
+      {
+        h: 'Fami通 Review (32/40)',
+        text:
+          'Fami通’s four editors each scored the game 8/10, for a total of 32/40 — the week’s joint first-place score. The editors specifically credited the Chain Skill system, calling the conditional auto-chain combat tactical and highly satisfying, and approved the character design, visuals, music and story pacing. Two editorial caveats stood out: one editor felt dialogue and scene transitions drag, while another praised the design as approachable and well-balanced for its price.',
+      },
+      {
+        h: 'Steam User Reviews',
+        text:
+          'Steam’s review status at launch was "Mostly Positive" — 72% of 120 reviews recommended the game. User praise mirrors the critics: the Kato scenario, Mitsuda soundtrack, buy-to-play structure, free party-building across 19 characters, cat-collecting and New Game+ endings. The recurring user complaints are the long runtime (50+ hours), weak map guidance, dead-end dungeons, overly simple battles and mobile-era backtracking. Overall, happy buyers describe it as a hidden gem; disappointed ones cite the slow opening and easy combat. The demo reviews on the same store page are even warmer, which suggests the opening chapters sell the game better than the later dungeons do.',
+      },
+      {
+        h: 'Player Pros & Cons',
+        list: [
+          'Pros: Masato Kato scenario · Yasunori Mitsuda music · no gacha, buy-to-play · 19 characters, free team building · cat collecting · New Game+ with multiple endings.',
+          'Cons: 50+ hour runtime feels long to some · weak map guidance · dead-end dungeons · combat can feel too simple · mobile-era backtracking.',
+          'Expectation check: this is a retro 2.5D pixel JRPG, not a AAA-scale production — reviewers who aligned expectations enjoyed it far more.',
+          'Best played: at your own pace, with the demo first — the first six chapters are the strongest advertisement for the full game.',
+        ],
+      },
+      {
+        h: 'Verdict for Different Players',
+        text:
+          'If you loved Chrono Trigger and its successors, this is the most direct spiritual continuation on the market — multiple outlets called it the "post-Chrono Trigger" surprise, and the free demo is an honest six-chapter sample before you spend anything. If you need high-end production values or hard combat, the reviews suggest you may bounce off. The general verdict across outlets: for fans of story-driven retro JRPGs, Another Eden Begins is easy to recommend at its price point. The demo is the safest first step for everyone else — the covered chapters are identical to the full game, so the experience you sample is exactly what you buy.',
+      },
+      {
+        h: 'Another Eden Begins Review FAQ',
+        list: [
+          'What is the Metacritic score? — 75 at launch, with the sample still accumulating.',
+          'Did Fami通 like it? — Yes — 32/40 (8/8/8/8), the week’s joint top score.',
+          'Is it worth buying? — Reviews say yes for retro/story JRPG fans; try the demo first if unsure.',
+          'Does it have gacha? — No — it is buy-to-play with no gacha, stamina or microtransactions.',
+          'How long is the game? — Roughly 30–50 hours for the main arc per reviews.',
+          'Is there a demo? — Yes, six chapters with save transfer into the full game.',
+          'What is the ESRB rating? — Teen.',
+          'Is the difficulty hard? — Reviewers largely find combat on the easy side.',
+          'How does it compare to Chrono Trigger? — Critics call it the closest spiritual successor in years, while noting it plays it safe.',
+          'Which version should I review or buy? — All three platforms run the same game; the demo is identical across them.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'vs-another-eden',
+    title: 'Another Eden Begins vs Another Eden',
+    seoTitle: 'Another Eden Begins vs Another Eden | Differences',
+    seoDescription:
+      'Another Eden Begins vs Another Eden: how the 2026 buy-to-play remake compares to the 2017 gacha mobile game — engine, combat, characters, exploration and more.',
+    description:
+      'Another Eden Begins vs Another Eden: the 2026 console remake vs the 2017 gacha mobile game — engine, battle system, character acquisition, exploration and progression compared.',
+    category: 'Comparison',
+    updated: 'Sep 27, 2026',
+    sections: [
+      {
+        h: 'Another Eden Begins vs Another Eden: Overview',
+        text:
+          'Another Eden: The Cat Beyond Time and Space is Wright Flyer Studios’ live-service mobile RPG running since 2017 — free to play, gacha-driven, continuously updated. Another Eden Begins is a buy-to-play single-player JRPG released September 17, 2026 on Switch 2, Switch and Steam, developed by Studio Prisma with WFS, and built as a standalone reconstruction of the mobile game’s Part 1 story. Same core creators — scenario and direction by Masato Kato, main theme by Yasunori Mitsuda — but almost everything else was rebuilt from scratch.',
+      },
+      {
+        h: 'Business Model',
+        list: [
+          'Mobile game: free-to-play with gacha pulls, chronos stone currency, stamina and live-service updates.',
+          'Begins: one-time purchase ($39.99 / ¥128 CN) with no gacha, no stamina and no subscription.',
+          'The developers explicitly said in interviews they want players who dislike gacha to give Begins a try.',
+          'The two monetization models are the cleanest summary of the split: one sells chance, the other sells a complete game.',
+        ],
+      },
+      {
+        h: 'Engine & Graphics',
+        text:
+          'This is an engine-level rewrite, not a port. The mobile game still runs on Cocos2d-x — a 2D engine WFS engineers had to modify into a de-facto private engine because official support ended. Begins moved to Unity and rebuilt graphics and systems from zero; producer Shinnosuke Hirasawa put it plainly: "we actually changed the entire game engine." Presentation is fully remade for console, with new lighting and effects on top of the same art direction. In practice that means the same hand-drawn character look, but rendered in real 3D spaces with free camera movement instead of the mobile game’s 2D corridor scenes.',
+      },
+      {
+        h: 'Battle System',
+        text:
+          'The mobile game uses traditional command-based turn combat. Begins replaces it with the Chain System: skills chain automatically when conditions are met, so party-building becomes a puzzle — you plan chains at the formation stage rather than reacting in battle. The Another Force overdrive mechanic returns but was rebalanced with new numbers and pacing. Reviews single this out as the biggest gameplay upgrade — Fami通’s editors specifically praised the Chain System as tactical and highly satisfying.',
+      },
+      {
+        h: 'Character Acquisition',
+        text:
+          'The biggest reversal of all: characters. In the mobile game, the roster comes from gacha pulls with random rates. In Begins, all 18 companions join through story progression — encounter quests, character quests and kinship (bond) quests — with every recruitment and bond scene fully voiced. Nothing is random, and every companion is free once you reach them. For new players this removes the single biggest barrier to entry: there is no "good roster" behind a paywall, and party strength comes from who you have actually met in the story.',
+      },
+      {
+        h: 'Exploration & Encounters',
+        list: [
+          'Mobile game: characters move along near-straight lines (roughly side-scrolling); random encounters trigger battles.',
+          'Begins: fully free 3D movement, hidden chests and stronger exploration rewards.',
+          'Encounters became visible symbol encounters — you can avoid battles you do not want.',
+          'Maps were redesigned around the new movement, though reviews note mobile-era backtracking remains.',
+        ],
+      },
+      {
+        h: 'Voice Acting',
+        text:
+          'The mobile version’s main story has stretches without voice acting and other dated audio gaps. Begins records voice for the main scenario, side quests and essentially every scene featuring major characters — fully voiced in both English and Japanese. The English cast is recorded by Side UK and reprises the mobile game’s cast; the Japanese cast is the same returning ensemble.',
+      },
+      {
+        h: 'Progression & Economy',
+        text:
+          'Progression was rebuilt around classic console JRPG loops. The mobile game lets you inject experience with items and grind materials long-term; Begins returns to leveling by battle, saving money for weapons, and a normal shop economy. The producer’s framing was blunt: "this is not a mobile game" — the item-driven shortcuts are gone.',
+      },
+      {
+        h: 'New Content in Begins',
+        list: [
+          'New Game+ mode, guided by the new sand-spirit character Ramiu.',
+          '10+ branching endings decided by player choices.',
+          '19 playable characters — the Part 1 roster plus newcomers.',
+          'The Part 1 story gets a complete conclusion (not a cliffhanger), with a hook left open for a sequel.',
+          'The mobile game’s later chapters remain exclusive to the live-service version.',
+        ],
+      },
+      {
+        h: 'Cross-Game Bonus',
+        text:
+          'The two games are connected by a one-way bridge: Begins’ Early Bird Bonus contains serial codes redeemable only in the mobile game — a "Skip Part 1" code for new mobile players, an Encounter Ramiu ticket, Aldo and Feinne outfits in Begins style, and three 5★-guaranteed 10-pull tickets. The codes cannot be used inside Begins itself; the mobile game keeps operating as its own live-service title.',
+      },
+      {
+        h: 'Which Game Should You Play?',
+        text:
+          'The honest answer depends on what you want. Play Another Eden Begins if you want a complete, offline story with a real ending, no gacha and no subscription — one purchase covers everything, and the demo lets you try it first. Play the mobile game if you want the ongoing live-service chapters, weekly content, and the full 10-year catalogue that Begins does not include — Begins only remakes Part 1, and the later arcs stay exclusive to the mobile version. Many players do both: Begins as the polished story experience, the mobile game as the continuing saga, with the Early Bird codes as the bridge between them.',
+      },
+      {
+        h: 'Another Eden Begins vs Another Eden FAQ',
+        list: [
+          'Are they the same game? — No — Begins is a standalone console remake of Part 1; the mobile game continues separately.',
+          'Do I need to play the mobile game first? — No, Begins is designed for newcomers.',
+          'Can I use my mobile account in Begins? — No, accounts and save data are separate.',
+          'Is Begins just a port? — No — new engine, new battle system, new exploration, new characters and endings.',
+          'Which is better? — Depends: Begins for a complete offline story; the mobile game for ongoing content.',
+          'Do the codes work in Begins? — No, they redeem only in the mobile game.',
+          'Is the mobile game shutting down? — No — it is still in operation.',
+          'Does Begins have gacha? — No — it is buy-to-play with no gacha or stamina.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'gacha',
+    title: 'Another Eden Begins Gacha',
+    seoTitle: 'Another Eden Begins Gacha | System Guide',
+    seoDescription:
+      'Another Eden Begins gacha explained: there is no gacha, no stamina and no microtransactions — how characters join, common misconceptions and what the DLC actually is.',
+    description:
+      'Another Eden Begins gacha guide: why the game has no gacha at all, how 18 companions join through quests, the mobile-code misconception, and what DLC really covers.',
+    category: 'Gacha',
+    updated: 'Sep 27, 2026',
+    sections: [
+      {
+        h: 'Is There Gacha in Another Eden Begins?',
+        text:
+          'No. Another Eden Begins removes gacha pulls, stamina meters and microtransactions entirely — this is a buy-to-play single-player JRPG. The official FAQ says it directly: "No, Another Eden Begins removes gacha pulls, stamina meters, and microtransactions entirely." You pay once, and the entire main story and all 19 playable characters are part of that purchase. There are no banners, no paid currency, no pull rates, no energy systems and no subscription.',
+      },
+      {
+        h: 'The Official Answer',
+        text:
+          'The developers were explicit about the decision. In interviews, producer Shinnosuke Hirasawa explained they did not try to replace the gacha thrill with a substitute — instead, every companion’s recruitment is written as a story: you help someone in trouble during your adventure and they eventually join you. The official website and Steam page use the language of quests, characters and New Game+, and never mention pulls, banners, chronos stones or rate-ups anywhere on the page. This is not a marketing trick — the absence of gacha is the entire point of the product, aimed directly at players who quit the mobile version over monetization.',
+      },
+      {
+        h: 'How Characters Join Instead',
+        text:
+          'Without gacha, the 18 companions come through a structured quest path for each character:',
+        list: [
+          'Encounter Quest — meet the character through the main story.',
+          'Character Quest — play their personal storyline.',
+          'Kinship (Bond) Quest — deepen the bond, with fully voiced scenes.',
+          'After their quest chain, the companion joins your roster permanently — no randomness, no duplicate pulls.',
+          'All 19 playable characters are available this way in the base game.',
+          'Critics noted the trade-off: recruitment quests are longer than a gacha pull, and RPGFan felt some drag — but nothing is random.',
+        ],
+      },
+      {
+        h: 'Business Model Comparison',
+        text:
+          'The contrast with the source material is total. The mobile game Another Eden: The Cat Beyond Time and Space is free-to-play and monetized through gacha pulls using chronos stones. Another Eden Begins costs about $39.99 (¥128 on Steam China) and contains the full experience with no in-app purchases. Critics highlighted exactly this: CGMagazine called it "a complete RPG with the gacha stripped out," and Noisy Pixel’s reviewer — who said they despise gacha — welcomed the removal explicitly. For a quick sanity check, the game’s store page has no premium currency, no bundles of "pulls" and no daily-login rewards — the signs of a gacha economy are simply absent.',
+      },
+      {
+        h: 'Common Misconceptions',
+        text:
+          'The most common confusion comes from the Early Bird Bonus. Begins includes serial codes — a Skip Part 1 code, an Encounter Ramiu ticket, outfits and three 5★-guaranteed 10-pull tickets — and players understandably ask whether these are Begins gacha rewards. They are not. The codes redeem only in the mobile game Another Eden: The Cat Beyond Time and Space; the official terms state they "cannot be used on Another Eden Begins." They are a cross-promotional bridge between two separate games, not evidence that Begins has gacha.',
+      },
+      {
+        h: 'What Critics Say',
+        list: [
+          'RPGamer: Begins "does a decent job removing any gacha elements and roadblocks from the original version."',
+          'Noisy Pixel: its reviewer, who dislikes gacha games, welcomed the gacha-free structure.',
+          'RPGFan: critical of how former gacha characters were turned into long side-quest recruitments — "the translation doesn’t work."',
+          'CGMagazine: "a complete RPG with the gacha stripped out" — 8.5/10.',
+        ],
+      },
+      {
+        h: 'What Players Say',
+        text:
+          'Player reactions online split in an interesting way. Some newcomers hesitated because the art style "looks very gacha visually" and feared monetization. Long-time mobile players, meanwhile, celebrated the offline single-player version — a recurring comment across official trailers reads: "having an offline, single player version of the beautiful game is a dream come true." The final trailer’s top comments thank the team "for releasing your game without gacha." The pattern is consistent: suspicion before playing, relief after the demo.',
+      },
+      {
+        h: 'Official Language',
+        text:
+          'A useful detection tip: the official marketing never uses gacha vocabulary. Announcement trailers say "form your party by choosing from 19 unique characters" and mention New Game+ with "over 10 time-bending endings" — no pulls, banners, rate-ups or paid currency. The Steam feature list reinforces it: single-player, 28 achievements, Steam Cloud, stats, family sharing and full controller support — with no online mode, rankings or gacha probability disclosures (which gacha games are legally required to publish in major markets). Compare the store pages side by side and the two games read like different genres entirely.',
+      },
+      {
+        h: 'DLC vs Gacha',
+        text:
+          'The only add-on content is traditional DLC, not a gacha pool. The Season Pass (¥108 CN / 4,500 yen) covers Vol.1–5 of the character packs through December 2026, and individual packs cost ¥25 / $9.99 each (Vol.1: Thillelille & Tiramisu; Vol.2: Elseal & Benedict). Every DLC purchase is a fixed one-time transaction for named characters — nothing random, nothing recurring. If you want the full roster, the Season Pass is the cheaper route; buying packs individually lets you pick only the characters you actually want.',
+      },
+      {
+        h: 'Another Eden Begins Gacha FAQ',
+        list: [
+          'Does Another Eden Begins have gacha? — No — no gacha, no stamina, no microtransactions.',
+          'Is it free to play? — No — it is buy-to-play (~$39.99 / ¥128 CN).',
+          'How do I get all characters? — Through story quests — Encounter, Character and Kinship quests.',
+          'What are the serial codes for? — Mobile game rewards; they cannot be used inside Begins.',
+          'Is there a battle pass? — No.',
+          'What are the DLC packs? — Fixed-price character packs and a Season Pass — not gacha.',
+          'Does the mobile game still have gacha? — Yes — it remains a free-to-play live-service title.',
+          'Is the art style a sign of gacha? — No — the game is fully buy-to-play despite the mobile-style art.',
+          'Why do trailers avoid the word gacha? — Because there is none — official materials only describe quests, characters and New Game+.',
+          'Can I play offline? — Yes — it is a fully single-player, offline-capable game.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'language',
+    title: 'Another Eden Begins Language',
+    seoTitle: 'Another Eden Begins Language | Supported Languages',
+    seoDescription:
+      'Another Eden Begins language support: five languages at launch, full English and Japanese voice acting, subtitle-only support for Chinese and Korean, and how to switch.',
+    description:
+      'Another Eden Begins language guide: the five supported languages at launch, which ones have full voice acting, how to switch language, and what is not supported.',
+    category: 'Language',
+    updated: 'Sep 27, 2026',
+    sections: [
+      {
+        h: 'Another Eden Begins Supported Languages',
+        text:
+          'Another Eden Begins launched with five languages — English, Japanese, Korean, Simplified Chinese and Traditional Chinese. This was confirmed by the official press release (GamesPress, April 4, 2026, signed by Studio Prisma head Shinnosuke Hirasawa) and matches the Steam store listing exactly. There are no plans listed for additional languages at launch, and notably the game ships without German, French, Spanish or Italian — languages that fans of the mobile original might expect. For the majority of players this is a non-issue; for European audiences it is the one real localization gap.',
+      },
+      {
+        h: 'Interface, Subtitles & Audio',
+        text: 'The full support matrix at launch:',
+        list: [
+          'English — interface, subtitles and full voice acting.',
+          'Japanese — interface, subtitles and full voice acting.',
+          'Korean — interface and subtitles only (no voice acting).',
+          'Simplified Chinese — interface and subtitles only.',
+          'Traditional Chinese — interface and subtitles only.',
+          'Every language is available on every platform — no region lock limits which languages you get.',
+          'Voice and text languages are separate settings, so a Japanese voice + English subtitle combo is standard.',
+        ],
+      },
+      {
+        h: 'Voice Languages',
+        text:
+          'Only English and Japanese have full voice acting. The English dub covers the entire main story and uses the returning cast from the mobile game, recorded by Side UK; the Japanese dub is the original language track with the same returning Japanese ensemble. Chinese and Korean players get subtitles only — there is no Chinese or Korean dub, and the official site does not list one. If you want Japanese voices with English subtitles, that combination is fully supported — voice and text are separate settings.',
+      },
+      {
+        h: 'How to Switch Language',
+        text:
+          'On Steam, the language options follow the store listing — the game reads your Steam client language, and the in-game settings let you change interface, subtitle and voice language independently where the game provides them. On Nintendo Switch and Switch 2, language follows the system settings on the same five supported languages. The free demo includes the same language options as the full game, so you can verify your language before buying. If your Steam client is set to an unsupported language, the game falls back to English by default.',
+      },
+      {
+        h: 'Japanese Physical Edition',
+        text:
+          'The Japanese physical release is labeled "Multi-Language," which means the JP cartridges carry the same five languages as the digital versions — English interface, subtitles and full English voice acting included. This matters for overseas buyers: a Japanese retail copy works fine for an English-speaking player, and the Switch version is region-free per retail listings. The one thing to keep in mind is that the bundled serial codes are for the Japanese mobile version. If you plan to buy the Japanese box purely for the game itself, the language support is exactly what you would expect from any other region’s copy.',
+      },
+      {
+        h: 'Language Availability by Platform',
+        list: [
+          'Steam: all five languages available; language follows your Steam client and can be changed in-game.',
+          'Switch / Switch 2 (digital): all five languages; follows the console system language.',
+          'Switch / Switch 2 (Japanese physical): labeled Multi-Language — the same five languages on the cartridge.',
+          'Western physical (2027, Aksys): expected to match the digital languages; official details pending.',
+          'Demo: identical language options to the full game on every platform.',
+        ],
+      },
+      {
+        h: 'vs the Mobile Game',
+        text:
+          'The mobile game Another Eden: The Cat Beyond Time and Space supports Japanese, English, Korean, Traditional Chinese, German and French. Another Eden Begins actually ships with fewer languages at launch — it drops German and French compared to the mobile title, and adds Simplified Chinese. Italian and Spanish are not supported in either direction, which dedicated articles had to confirm for European players ("Italiano? No"). If German or French support is a dealbreaker for you, the mobile game remains the only version with those languages.',
+      },
+      {
+        h: 'What Is Not Supported',
+        list: [
+          'No German or French at launch (the mobile game has both).',
+          'No Spanish or Italian.',
+          'No Chinese or Korean voice acting — subtitles only.',
+          'No Russian, Portuguese, Thai or other languages announced.',
+          'If a language is not listed on Steam, the game does not include it.',
+          'European players who need German or French must play the mobile version or wait for a potential update — nothing has been announced.',
+        ],
+      },
+      {
+        h: 'Buying Guide for Non-English Players',
+        text:
+          'For players outside Japan and English markets, the practical advice: all five languages are present in every digital version, so the platform (Switch, Switch 2 or Steam) does not lock languages. Chinese and Korean players can buy any regional copy and get their subtitle support; the only edition differences are the physical extras and serial codes. If you only need subtitles, the Japanese physical edition is safe — it is explicitly multi-language. And if you are comparing storefronts, check the Steam listing first: it publishes the full language matrix up front, which the console stores do not always show clearly.',
+      },
+      {
+        h: 'Another Eden Begins Language FAQ',
+        list: [
+          'How many languages does the game support? — Five at launch: EN, JA, KO, Simplified CN and Traditional CN.',
+          'Is there Chinese voice acting? — No — Chinese is subtitle-only.',
+          'Does the English dub cover everything? — Yes — the full main story plus side and bond scenes.',
+          'Can I play with Japanese voices and English subtitles? — Yes, they are selected independently where supported.',
+          'Does the demo have the same languages? — Yes, all five are in the demo.',
+          'Is the Japanese physical version multi-language? — Yes, it is labeled Multi-Language.',
+          'Why is there no German or French? — Begins dropped them relative to the mobile game; no launch plan lists them.',
+          'Can I change language mid-save? — Yes — language is a settings option, not tied to your save.',
+          'Which voice language should I pick? — Japanese for the original cast; English for the Side UK dub — both cover the full story.',
+          'Are subtitles available in all five languages? — Yes — every language includes subtitles.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'voice-actors',
+    title: 'Another Eden Begins Voice Actors',
+    seoTitle: 'Another Eden Begins Voice Actors | Cast',
+    seoDescription:
+      'Another Eden Begins voice actors: the full Japanese and English cast of 19 characters, returning mobile-game talent, Side UK recording and the new character Ramiu.',
+    description:
+      'Another Eden Begins voice actors guide: the complete 19-character Japanese and English voice casts, returning mobile-game talent, and the new character Ramiu.',
+    category: 'Voice Actors',
+    updated: 'Sep 27, 2026',
+    sections: [
+      {
+        h: 'Another Eden Begins Voice Cast Overview',
+        text:
+          'Another Eden Begins features full voice acting in both English and Japanese for the main scenario, side quests and essentially every scene featuring major characters — producer Shinnosuke Hirasawa confirmed the recording covered "the main scenario, side quests, and essentially all scenes featuring major characters." The Japanese cast is the original mobile-game ensemble; the English dub is recorded by Side UK with the same cast that voiced the mobile game’s English release. Nineteen playable characters each have official cast listings on the game’s website, with voice samples. For players who followed the mobile game, this is the same beloved cast performing a fully remade script.',
+      },
+      {
+        h: 'Japanese Voice Cast',
+        text: 'The Japanese cast (official website, 19 characters):',
+        list: [
+          'Aldo — Kōki Uchiyama · Feinne — Ai Kayano · Cyrus — Shigeru Chiba · Amy — Rina Satō · Riica — Rie Kugimiya · Helena — Rie Tanaka.',
+          'Anabel — Miyuki Sawashiro · Gariyu — Yoshimasa Hosoya · Shanie — Shizuka Itō · Shion — Takahiro Sakurai · Suzette — Sumire Uesaka · Cetie — Takuya Satō.',
+          'Bertrand — Rikiya Koyama · Mariel — Saori Hayami · Myrus — Kana Asumi · Melina — Rie Murakawa · Yuna — Ayane Sakura · Renri — Yuri Yamaoka.',
+          'Ramiu (new character) — Naomi Ōzora.',
+          'This is a star-studded ensemble by any measure — Uchiyama, Kayano, Kugimiya and Sawashiro are among the most recognizable names in Japanese voice acting.',
+          'Official voice samples for every character are available on the Japanese website’s VOICE buttons.',
+        ],
+      },
+      {
+        h: 'English Voice Cast',
+        text: 'The English cast (official English site, 19 characters, recorded by Side UK):',
+        list: [
+          'Aldo — Jared Zeus · Feinne — Leader Looi · Cyrus — Timothy Watson · Amy — Janine Harouni · Riica — Rebecca Kiser.',
+          'Helena — Alexandra Boulton · Anabel — Jessica McDonald · Gariyu — Rory Fleck Byrne · Shanie — Naomi McDonald · Shion — Shai Matheson · Suzette — Skye Bennett.',
+          'Cetie — Mike Bodie · Bertrand — Anthony Howell · Mariel — Jessica McDonald · Myrus — Hollie Taylor · Melina — Clare Corbett · Yuna — Laura Aikman · Renri — Diana Bermudez.',
+          'Ramiu (new character) — Leader Looi (also voices Feinne).',
+          'The English side is an experienced game-dub cast — Jared Zeus, Rebecca Kiser and Skye Bennett have extensive JRPG and anime credits.',
+          'The English site lists every character’s CV alongside their one-line description for quick reference.',
+        ],
+      },
+      {
+        h: 'Returning Cast from the Mobile Game',
+        text:
+          'The voice cast is a direct continuation of the mobile game’s. The Japanese side kept virtually the entire original ensemble — Aldo (Kōki Uchiyama), Feinne (Ai Kayano), Cyrus (Shigeru Chiba), Riica (Rie Kugimiya) and Anabel (Miyuki Sawashiro) among others were not recast. The English side matches the cast published when the mobile game launched in North America in 2019 — Jared Zeus, Timothy Watson, Janine Harouni, Rebecca Kiser and the rest reprise their roles. This continuity is a big part of the "spiritual successor" reception — long-time mobile players hear the same voices and instantly feel at home.',
+      },
+      {
+        h: 'New Character Ramiu',
+        text:
+          'Ramiu, the sand-spirit who guides players through New Game+, is new to Begins. She is voiced by Naomi Ōzora in Japanese and Leader Looi in English — Leader Looi also voices Feinne, the first time one actor covers two playable characters in the cast. Ramiu exists only in Begins; the mobile game added her character later as part of the cross-promotion. In-game she functions as the New Game+ guide, which makes her the one character every returning player meets after finishing the story once.',
+      },
+      {
+        h: 'Full Voice Acting Coverage',
+        text:
+          'Unlike the mobile original — which has unvoiced stretches and dated audio gaps — Begins records voice for the main scenario, all side quests and essentially every scene featuring major characters. The official trailers lean on this heavily: the release-date trailer calls the main story "a richly woven tale with full voice acting," and the Final Trailer repeats the fully voiced point alongside the New Game+ and demo-save messaging. For a story-driven RPG, this is the difference between reading a summary and experiencing the scenes — and it is the single most-cited production upgrade in reviews.',
+      },
+      {
+        h: 'How to Hear the Voices',
+        list: [
+          'Free demo: covers the first six chapters with full voice acting in EN and JA.',
+          'Official website: each character page has a VOICE sample button on the Japanese site.',
+          'Trailers: the Final Trailer and release-date trailer both showcase voiced scenes.',
+          'Full game: all main story, side quests and bond scenes are voiced.',
+          'Voice-only tip: set the language to Japanese or English and keep subtitles in your preferred language for the full dual-track experience.',
+          'The full release contains far more voiced content than the demo — the demo only samples the opening chapters.',
+        ],
+      },
+      {
+        h: 'Another Eden Begins Voice Actors FAQ',
+        list: [
+          'Who voices Aldo? — Kōki Uchiyama (Japanese) / Jared Zeus (English).',
+          'Is the Japanese cast the same as the mobile game? — Yes, virtually the entire ensemble returned.',
+          'Is the English cast the same as the mobile game? — Yes — the Side UK cast from the 2019 North American launch.',
+          'Who voices the new character Ramiu? — Naomi Ōzora (JP) / Leader Looi (EN).',
+          'Is there a Chinese dub? — No — only English and Japanese have full voice acting.',
+          'How much of the game is voiced? — Main scenario, side quests and all major-character scenes.',
+          'Where can I hear sample voices? — The official website has VOICE samples per character.',
+          'Does the demo have voice acting? — Yes, fully voiced in English and Japanese.',
+          'Who records the English dub? — Side UK, a London-based voice production house.',
+          'Why do some actors voice two characters? — Only Leader Looi doubles up — Feinne and Ramiu in English.',
+          'Does the cast appear in the demo too? — Yes — the demo includes the same voice cast from the opening chapters.',
+        ],
+      },
+    ],
+  },
 ];

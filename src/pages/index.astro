@@ -122,14 +122,13 @@ const searchIndex = [
   { slug: 'release-date', t: 'Release Date', d: 'Release date, price tiers and pre-order details' },
   { slug: 'demo', t: 'Demo', d: 'Demo coverage, platforms and save transfer' },
   { slug: 'editions', t: 'Editions', d: 'Physical & collector’s editions, contents and prices' },
-];
-const comingSoon = [
-  { slug: 'review', t: 'Review', d: 'Review and gameplay analysis' },
+  { slug: 'review', t: 'Review', d: 'Critic scores, Fami通 verdict and pros & cons' },
   { slug: 'vs-another-eden', t: 'Vs Another Eden', d: 'Differences between the two games' },
-  { slug: 'gacha', t: 'Gacha', d: 'Gacha system guide' },
-  { slug: 'language', t: 'Language', d: 'Supported languages' },
-  { slug: 'voice-actors', t: 'Voice Actors', d: 'Voice cast list' },
+  { slug: 'gacha', t: 'Gacha', d: 'Why there is no gacha and how characters join' },
+  { slug: 'language', t: 'Language', d: 'Supported languages and voice options' },
+  { slug: 'voice-actors', t: 'Voice Actors', d: 'Japanese and English voice cast' },
 ];
+const comingSoon = [];
 const faqLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -184,8 +183,8 @@ const faqLd = {
           <input type="search" id="searchInput" placeholder="Search the wiki — try “tier list”, “ps5”, “demo”…" aria-label="Search the wiki">
           <button type="submit" id="searchBtn">Search</button>
         </div>
-        <div class="search-hint">Try “demo”, “ps5”, “tier list”, “DLC” or a character name — pages still in the rollout are shown as coming soon. No matches open a Google site search.</div>
-        <p class="search-note">No account needed — search above, open any entry point, and jump straight to the section you need. Pages for reviews, comparisons, gacha and more are still on the way.</p>
+        <div class="search-hint">Try “demo”, “ps5”, “tier list”, “DLC” or a character name. No matches open a Google site search.</div>
+        <p class="search-note">No account needed — search above, open any entry point, and jump straight to the section you need. The full rollout — including reviews, the vs Another Eden comparison, gacha, languages and voice actors — is now live.</p>
         <ul class="search-results" id="searchResults" hidden></ul>
       </form>
       <script type="application/json" id="searchIndex" set:html={JSON.stringify(searchIndex)} />
