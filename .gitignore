@@ -3,6 +3,9 @@ dist/
 # generated types
 .astro/
 
+# page screenshots / inspection output
+_shots/
+
 # dependencies
 node_modules/
 
