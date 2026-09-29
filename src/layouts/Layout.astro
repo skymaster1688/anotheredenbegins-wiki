@@ -56,6 +56,21 @@ const siteConfig = {
   adBody: `
     <div id="container-5dbba7b9da68fc981a5fd9f2229064ad"></div>
   `,
+  // —— 广告代码（导航栏下方横幅）—— 注入每个页面 <header> 之后、<main> 之前
+  adBelowNav: `
+    <div style="text-align:center;padding:10px 0 2px;">
+      <script>
+        atOptions = {
+          'key' : 'b3a47f2463d6394272ba8e6735321972',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://www.highrevenueformat.com/b3a47f2463d6394272ba8e6735321972/invoke.js"></script>
+    </div>
+  `,
 };
 
 const nav = [
@@ -126,6 +141,8 @@ const nav = [
       </nav>
     </div>
   </header>
+
+  <Fragment set:html={siteConfig.adBelowNav} />
 
   <main>
     <slot />
