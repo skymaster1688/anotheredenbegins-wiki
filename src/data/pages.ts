@@ -84,6 +84,17 @@ export const pages: PageData[] = [
         ],
       },
       {
+        h: 'Walkthrough Help & Puzzle Solutions',
+        text:
+          'The main story is 26 chapters and roughly 30-50 hours, and a few spots reliably trip players up. The free demo ends after Chapter 6 — if you load a demo save into the full game, you continue at Chapter 7 "Acteul: A Shadow Across the Water." Chapter 10 brings the Tower of Time clock puzzle, where colored gems (II Blue, V Yellow, IV Green) open portals in a specific order; save before starting and swap gems out when a portal closes. Do not challenge the large Horror at the northeast exit of the Zol Plains early — it will kill you. And if you are hunting completion, the hidden content page covers every cat, secret shop and optional boss.',
+        list: [
+          'Demo saves continue at Chapter 7: Acteul — A Shadow Across the Water.',
+          'Tower of Time puzzle: use II (Blue) first, then V (Yellow), then IV (Green), swapping gems as portals close.',
+          'The Zol Plains northeast Horror is a trap — come back later.',
+          'For 100%: 56 cats, six codex collections and several optional bosses wait on the Secrets page.',
+        ],
+      },
+      {
         h: 'Progression & New Game+',
         text:
           'Progression is character-first: level up in battle, spend ability points on two skill trees per character, forge gear from materials, and reset ability points anytime with the River of Time Water. Completing the main story unlocks New Game+ — your party keeps their strength, a mysterious girl named Ramiu guides the second journey, and the choices you make branch into more than 10 different endings. New Game+ also adds exclusive equipment and a new companion to recruit, which is why many players treat the first playthrough as preparation for the second.',
@@ -549,6 +560,11 @@ export const pages: PageData[] = [
         ],
       },
       {
+        h: 'DLC vs Gacha',
+        text:
+          'One question keeps coming up: is the DLC a form of gacha? No — every pack is a fixed one-time purchase for named characters, and the official FAQ is explicit that Another Eden Begins removes gacha pulls, stamina meters and microtransactions entirely. The Season Pass is a straight bundle: you pay once and receive five character packs as they release. There are no random rolls, no rate-ups, no duplicate pulls and no premium currency anywhere in the store page. The only monetization in the game is these character packs and the base game itself — so the DLC cost is fully predictable before you buy. If you want the complete roster across base game and DLC, that total is the Season Pass price plus the base game, and nothing else.',
+      },
+      {
         h: 'Support & Updates',
         text:
           'DLC content requires the latest game version. A few practical notes:',
@@ -569,6 +585,8 @@ export const pages: PageData[] = [
           'Can I buy packs separately? — Yes, from Vol.2 onward each pack is sold individually; the Season Pass bundles all five at a discount.',
           'Do DLC packs include costumes or items? — No, each pack contains 2 characters plus their quests only.',
           'Can I refund a DLC pack? — Follow the standard Steam refund policy for individual packs; the Season Pass is treated as one purchase.',
+          'Is the DLC a gacha? — No — every pack is a fixed-price purchase for named characters; the game has no gacha, stamina or microtransactions.',
+          'Does the Season Pass expire? — No — you receive all five packs as they release, with no time limit.',
         ],
       },
     ],
@@ -1517,6 +1535,109 @@ export const pages: PageData[] = [
           'Who records the English dub? — Side UK, a London-based voice production house.',
           'Why do some actors voice two characters? — Only Leader Looi doubles up — Feinne and Ramiu in English.',
           'Does the cast appear in the demo too? — Yes — the demo includes the same voice cast from the opening chapters.',
+        ],
+      },
+    ],
+  },
+
+  {
+    slug: 'secrets',
+    title: 'Another Eden Begins Secrets',
+    seoTitle: 'Another Eden Begins Secrets | Hidden Content & Easter Eggs',
+    seoDescription:
+      'Another Eden Begins secrets and hidden content — the 56-cat Codex, secret shops, hidden rooms, optional bosses, puzzles and New Game+ extras.',
+    description:
+      'The hidden side of Another Eden Begins — cats, secret shops, hidden rooms, optional bosses and puzzle solutions, with locations pulled from a full playthrough.',
+    category: 'Secrets',
+    updated: 'Oct 25, 2026',
+    sections: [
+      {
+        h: 'Another Eden Begins Secrets Overview',
+        text:
+          'Another Eden Begins is full of hidden content beyond the main story. The game tracks six codex collections — weapons, food, badges, armor, items and cats — each tied to an achievement, and several of them require actively looking for things the story never points you to. There are 56 cats to befriend, secret shops hidden behind NPCs, hidden rooms inside major dungeons, optional bosses that take multiple playthroughs to exhaust, and a New Game+ layer that adds its own exclusive equipment and endings. None of it is random: everything below has a fixed location and a condition, so treat this page as the checklist for 100% completion. Locations come from a full published walkthrough (RPG Site) and reflect the base game only — paid DLC characters are not included.',
+      },
+      {
+        h: 'Cat Codex & All 56 Cats',
+        text:
+          'Early in the game, after certain story events in Baruoki, Aldo obtains the Codex. From that point you can inspect cats to befriend them. Every cat is marked on your Local Map and registers in your Cat Codex the moment you interact with it. Once registered, that cat can follow Aldo around — only one cat follows at a time, so you can rotate them freely. Completing the full codex unlocks the Crazy Cat Collector achievement.',
+        list: [
+          'Varuo (1/56) is your starting cat, obtained during the Baruoki story.',
+          'Early finds: Langelo (NE Baruoki), Peasuke (SE Baruoki), Leale (W Nuaru Uplands).',
+          'Elzion: Kassy and Gust at the airport, Gear in Theta District, Chain and Millie in Gamma District.',
+          'Route 99: Kotaro past the Junk Shop, Sabi to the west.',
+          'Zol Plains: Miir (S) and Goza (SW). Lake Tiilen: Yoshuasu (E). Acteul: Toroto (SE) and Uno (center).',
+          'Palsifal Palace: Noal (1F E), Olco (dungeon center), Nobel (2F N). Keruri Highroad: Nebula (center).',
+          'Karek Swampland: Salasa (NW), Leon (SE). Unigan: Lemeks (SW), Veego (SE), Balu (E), Eepan (W).',
+          'Serena Coast: Brom (W), Penne (center), Kain (NE). Rinde: Dora (N), Meloe (NE), Kohaze (S).',
+          'Later regions: Peneka (Last Island S), Sady and Abisha (Laula Dome), Lukai and Racke (Corinda Plains), Agee (Rucyana Sands), Sando, Tam and Liam (Zarbo), Telko and Ploodo (Sarupa), Isaac and Racketoto (Charol Plains).',
+          'The last cat, Shevanon (56/56), is NW of Nilva — finding her completes the set.',
+        ],
+      },
+      {
+        h: 'Eternal Jade & Blue Climbing Roses (Shanie)',
+        text:
+          'Recruiting Shanie is the most involved hidden side-quest in the game because it asks you to find two collectible materials and craft a special item. Start her New Encounter at Corinda Plains, then collect the two materials: the Eternal Jade is found north of Serena Coast, and the Blue Climbing Roses are found southeast of Laula Dome. At any Camp, choose Craft then Craft Items and make the Tiara of Blue Climbing Roses. Return to Corinda Plains with the tiara and Shanie will join your party. This is the game teaching you its crafting loop with a character reward — and both materials only appear after the Encounter starts, so do not search for them earlier.',
+      },
+      {
+        h: 'Secret Shops & Merchants',
+        text:
+          'Several shops are easy to miss because they are opened by specific NPCs rather than shown on the map. The most useful is the Junk Shop on Route 99: talk to an NPC there to unlock it, and you can exchange Crimson Gems for special items — including the valuable River of Time Water respec material. In Keruri Highroad, a Shady Merchant in the center of the road opens a hidden shop. Time’s Forgotten Stop in the Spacetime Rift has a Master Shop that sells Kitten-Tongue Toddy and Goldfruit Compote. In Rinde, an NPC by the southeast house runs a Fisher’s Supplies Shop selling the Delish Fish Dish. In Sarupa, a Ruby-Sleeved Merchant at the center sells rare goods, and in Elzion’s La Vie En Rose you can buy Prisma Candy — with a Pudding a la Mode on sale for 300,000 Git if you are very rich by then.',
+      },
+      {
+        h: 'Hidden Rooms & Secret Paths',
+        text:
+          'Dungeons hide several rooms the main objective never takes you to. In Miglance Castle Annex 4F, inspect the northeast corner to open a Secret Room holding three treasure chests. In Baruoki, smash the wall of the west well to reach an underground area with 500 Git and a River of Time Water. In the Vasu Mountains, follow the hidden paths east to reach Mountain Cave and a chest with the Big Hammer. In Palsifal Palace, examine the smoking passage west of the vase with Fine Thread to enter the Underground and claim the Rune Ring. Late in the game, ride the mine cart at the end of the Tower of Stars Underground to reach the two chests that were inaccessible in the Palsifal Palace Dungeon — they hold the Stardust Cord and Stardust Belt.',
+      },
+      {
+        h: 'Tower of Time Clock Puzzle',
+        text:
+          'The Tower of Time’s central puzzle uses colored gems on a clock face to open portals. Four gems exist — II (Blue), IV (Green), V (Yellow) and IV (Purple, obtained later) — and the sequence changes each time you revisit. On the first visit you only have the blue, green and yellow gems: insert II to open Room 6, V to open Room 8, then use IV to reach Room 5 and the Rune Necklace chest. The trick is that inserting one gem can close another portal, so you swap gems in and out as you go. After chapter 12, return with the purple IV gem and you can open the remaining rooms — the Armor Breaker and Espada are in there. It is the one puzzle in the game where saving before starting is worth it.',
+        list: [
+          'First visit: II (Blue) → Room 6 chest; V (Yellow) → Room 8; IV (Green) → Room 5 Rune Necklace.',
+          'Later sequence opens Rooms 3, 10 and 11 for 33,000 Git, River of Time Water and the Cinnabar Saber.',
+          'After Chapter 12: grab IV (Purple) in the Basement Warehouse and return to clear every remaining room.',
+          'Final haul includes the Armor Breaker and Espada weapons.',
+        ],
+      },
+      {
+        h: 'Optional Bosses',
+        text:
+          'Beyond the story bosses there are four repeatable and optional fights worth hunting. The most famous is Uquaji: in the Spacetime Rift, jump into a bucket and talk to the little creature to challenge an optional boss. Uquaji can be fought again at multiple story points — at least three times across chapters 11, 19 and 21 — each time tougher. Later, Moonlight Forest’s end holds the Goblin King, and the northeast exit of the Zol Plains leads to the Red Dawn boss. In the post-story clean-up (chapter 26), take the northwest exit of Last Island to fight the Imbrium Basin. One warning from the walkthrough: do not challenge the big Horror at the northeast exit of the Zol Plains early — it will kill you.',
+      },
+      {
+        h: 'Horror Enemies & Badges',
+        text:
+          'Horrors are a deliberate difficulty spike: stronger than anything around them, they guard valuable chests and drop their own badges when defeated. The badge acts as both proof of the kill and a collectible for the Badge Badger achievement, so the walkthrough assumes you fight every Horror as you discover it. Notable Horrors by region: Stoneguard Abbetos (Baruoki Underground Cave), Forest Guardian (Moonlight Forest), Arianrhod (Route 99), Vengeful Soldier and Durable Agateram (Industrial Ruins), King of Extinction (Zol Plains), Magmyne (Vasu Mountains), Blazing Soul (Mount Nadara), Coastal Fiend (Lake Tiilen), Orcizzy (Derismo Highroad), Giant Slime (Man-eating Marsh), Ruthless Lancer (Keruri Highroad), Land Steward and House Keeper (Tower of Time), Vibrant Talon (Karek Swampland), Sea God’s Aide (Serena Coast), Milgram (Corridor of Time Layers), Alpha Puck and Dimension Soldier (The Riftbreaker), Avatar of Wisdom (Corinda Plains), Alchemist Clone (Tower of Stars), Glutton Chimera and Royal Knight (Beast King’s Castle), Jupiter (Dimensional Vortex), Archfiend (Chronos’s Umbra) and Labyrinth Guardian (Chronos’s Umbra deep). Elite variants of normal enemies also matter: a blue Elite Goblin drops Hard Leather and a red Yaksha drops Sturdy Thread in the Moonlight Forest — both needed to craft the Hooded Cloak that recruits Myrus.',
+      },
+      {
+        h: 'Xeno-Domain Passcode & Other Oddities',
+        text:
+          'A few small secrets are easy to miss. The Xeno-Domain asks for a passcode to open a chest — it is EDEN. In Sarupa, inspecting the southeast landmark lets you bury the Geo Metal Lock Box, but you cannot dig it up yet — the game holds this thread until a later point, so do not worry if nothing happens. In Palsifal Palace, the Royal Bedchambers hide the Stone Memory Music Box in the northwest bed. And the River of Time Water — found in the opening area, the Vasu Mountains, the Tower of Time and Corinda Plains SW — is the game’s respec item: it refunds all ability points for a character, which means you can experiment with builds freely and undo mistakes.',
+      },
+      {
+        h: 'New Game+ Secrets',
+        text:
+          'New Game+ adds its own hidden layer rather than just scaling numbers. It carries over your levels, learned abilities and equipment, and most chests re-populate with different, level-appropriate contents. Enemies and bosses are all higher-level. The catch: the five core story party members — Feinne, Amy, Riica, Cyrus and Helena — re-join at the same points they did in the first playthrough, at the levels you left them at the end. The optional characters from New Encounters re-join much earlier, and shortly after the intro, the final party member Ramiu joins you. There are also new story elements and NG+-exclusive equipment that the walkthrough deliberately leaves unspoiled.',
+        list: [
+          'Levels, abilities and equipment carry over; core five rejoin at story points with their ending levels.',
+          'New Encounter characters rejoin early, and Ramiu joins shortly after the intro.',
+          'Chests reset with higher-level loot; enemies and bosses scale up.',
+          'New story elements and NG+-exclusive gear are kept intentionally unspoiled.',
+        ],
+      },
+      {
+        h: 'Another Eden Begins Secrets FAQ',
+        list: [
+          'How many cats are there? — 56 in the base game; completing the codex earns the Crazy Cat Collector achievement.',
+          'Where is the Eternal Jade? — North of Serena Coast.',
+          'Where are the Blue Climbing Roses? — Southeast of Laula Dome.',
+          'How do I recruit Shanie? — Start her Encounter at Corinda Plains, gather both materials, craft the Tiara of Blue Climbing Roses at a Camp, then return.',
+          'What does the River of Time Water do? — Refunds all of a character’s ability points for free respecs.',
+          'Is the Xeno-Domain passcode a secret? — The chest passcode is EDEN.',
+          'Can Uquaji be fought more than once? — Yes, at least three times across chapters 11, 19 and 21.',
+          'What is the hardest optional boss? — The final Imbrium Basin in chapter 26 is the post-game challenge.',
+          'Do DLC characters count toward the codex achievements? — No, the codex achievements are base-game only.',
+          'Where can I find the full walkthrough? — RPG Site published a chapter-by-chapter walkthrough with all cats, chests and quests.',
         ],
       },
     ],
